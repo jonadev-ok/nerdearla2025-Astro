@@ -14,10 +14,11 @@ export default function MenuToggle() {
       </button>
       {open && (
         <div className="absolute right-0 mt-2 text-white shadow p-4 flex flex-col gap-4">
-          <a href="/" onClick={() => setOpen(false)}>Inicio</a>
-          <a href="#about" onClick={() => setOpen(false)}>Sobre Nosotros</a>
-          <a href="#services" onClick={() => setOpen(false)}>Servicios</a>
-          <a href="/Blog/" onClick={() => setOpen(false)}>Blog</a>
+            
+          <a href="/" class="hover:text-cyan-500 "onClick={() => setOpen(false)}>Inicio</a>
+          <a href="#about" class="hover:text-cyan-500 "onClick={() => setOpen(false)}>Sobre Nosotros</a>
+          <a href="#services" class="hover:text-cyan-500 "onClick={() => setOpen(false)}>Servicios</a>
+          <a href="/Blog/" class="hover:text-cyan-500 "onClick={() => setOpen(false)}>Blog</a>
         </div>
       )}
     </div>
