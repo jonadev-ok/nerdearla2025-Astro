@@ -1,6 +1,50 @@
-<header>
-    <img src="" alt=""/>
-    <nav>
+---
+const { pathname } = Astro.url;
+const itemsNav = [
+  {
+    title: "Inicio",
+    label: "Inicio",
+    url: "/",
+  },
+  {
+    title: "Nosotros",
+    label: "Nosotros",
+    url: "#about",
+  },
+  {
+    title: "Servicios",
+    label: "Servicios",
+    url: "#services",
+  },
+  {
+    title: "Blog",
+    label: "Blog",
+    url: "/Blog/",
+  },
+];
+---
 
-    </nav>
+<header>
+  <img src="" alt="" />
+  <nav>
+    {
+      itemsNav.map((link: any) => {
+        const isActive =
+          link.url === "/" ? pathname === "/" : pathname.startsWith(link.url);
+        return (
+          <a
+            class={`text-xl ml-15 font-extralight block px-2 py-2 transition transform duration-300 hover:scale-110 ${
+              isActive
+                ? "text-cyan-500 font-semibold"
+                : "text-white hover:text-cyan-500"
+            }`}
+            aria-label={link.label}
+            href={link.url}
+          >
+            {link.title}
+          </a>
+        );
+      })
+    }
+  </nav>
 </header>
