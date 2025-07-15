@@ -1,4 +1,5 @@
 ---
+const image = "../../assets/astro.svg";
 const { pathname } = Astro.url;
 const itemsNav = [
   {
@@ -24,8 +25,13 @@ const itemsNav = [
 ];
 ---
 
-<header>
-  <img src="" alt="" />
+<header class="flex w-full justify-evenly">
+  <img
+    src="../../../public/favicon.svg"
+    class="mx-3 w-10"
+    alt="logo"
+    loading="lazy"
+  />
   <nav
     class="flex w-full px-3 rounded-full text-gray-200 justify-center items-center"
   >
