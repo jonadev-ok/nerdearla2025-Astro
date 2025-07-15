@@ -1,5 +1,7 @@
 ---
 const image = "../../assets/astro.svg";
+import MenuToggle from "../../islands/MenuToggle";
+
 const { pathname } = Astro.url;
 const itemsNav = [
   {
@@ -25,16 +27,14 @@ const itemsNav = [
 ];
 ---
 
-<header class="flex w-full justify-evenly">
+<header class="flex w-full items-center justify-between px-4">
   <img
     src="../../../public/favicon.svg"
     class="mx-3 w-10"
     alt="logo"
     loading="lazy"
   />
-  <nav
-    class="flex w-full px-3 rounded-full text-gray-200 justify-center items-center"
-  >
+  <nav class="hidden md:flex gap-6 flex-grow justify-center">
     {
       itemsNav.map((link: any) => {
         const isActive =
@@ -55,4 +55,5 @@ const itemsNav = [
       })
     }
   </nav>
+  <MenuToggle client:load />
 </header>
