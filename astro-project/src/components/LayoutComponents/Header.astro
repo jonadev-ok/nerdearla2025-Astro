@@ -28,9 +28,9 @@ const itemsNav = [
 ---
 
 <header
-  class="fixed top-0 z-10 mt-3 flex w-full items-center justify-between px-2"
+  class="fixed top-0 z-10 bg-black flex w-full items-center justify-between px-2"
 >
-  <div class="flex items-center w-50">
+  <div class="flex justify-center items-center w-50 h-auto">
     <img src={Logo.src} class="m-3 w-7" alt="logo" />
     <h2 class="my-3 text-orange-500 font-bold text-2xl">
       Astro<span class="text-white font-bold text-2xl"> devs</span>
@@ -43,7 +43,7 @@ const itemsNav = [
           link.url === "/" ? pathname === "/" : pathname.startsWith(link.url);
         return (
           <a
-            class={`text-2xl ml-15 font-extralight block px-2 py-2 transition transform duration-300 hover:scale-110 ${
+            class={`text-2xl ml-15 font-light block px-2 py-2 transition transform duration-300 hover:scale-110 ${
               isActive
                 ? "text-orange-500 font-semibold"
                 : "text-white hover:text-orange-500"
