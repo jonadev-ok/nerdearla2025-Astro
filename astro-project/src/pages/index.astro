@@ -1,7 +1,17 @@
 ---
+import About from "../components/sections/About.astro";
+import Hero from "../components/sections/Hero.astro";
 import Layout from "../layouts/Layout.astro";
+const data = {
+  title: "Hola ,",
+  span: "soy jonadev",
+  description: "LOREM",
+};
 ---
 
 <Layout>
-  <section class="w-full h-[100vh] text-center mt-20"></section>
+  <section class="w-full h-[100vh] text-center mt-20">
+    <Hero {...data} />
+    <About/>
+  </section>
 </Layout>
