@@ -1,5 +1,6 @@
 ---
 import Logo from "../../../public/Astro_dark.svg";
+import GitHubLogo from "../../../public/GitHubLogo.svg";
 import MenuToggle from "../../islands/MenuToggle";
 
 const { pathname } = Astro.url;
@@ -36,7 +37,7 @@ const itemsNav = [
       Astro<span class="text-white font-bold text-2xl"> devs</span>
     </h2>
   </div>
-  <nav class="hidden md:flex gap-6 flex-grow justify-center">
+  <nav class="w-100 hidden md:flex gap-3 justify-center">
     {
       itemsNav.map((link: any) => {
         const isActive =
@@ -57,5 +58,10 @@ const itemsNav = [
       })
     }
   </nav>
+  <div class="flex justify-center items-center w-20 h-auto">
+    <a class="flex text-white" href="https://github.com" target="_blank">
+      <img src={GitHubLogo.src} class="m-3 w-7" alt="repositorio" />
+    </a>
+  </div>
   <MenuToggle client:load />
 </header>
