@@ -4,9 +4,9 @@ export default function MenuToggle() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="md:hidden flex justify-end w-full relative">
+    <div className="md:hidden flex justify-end w-full relative px-2 bg-black">
       <button
-        className="text-xl text-orange-500 flex justify-between"
+        className="text-2xl text-orange-500 flex w-10 h-10 justify-between cursor-pointer"
         onClick={() => setOpen(!open)}
         aria-label="Abrir menú"
       >
@@ -18,6 +18,7 @@ export default function MenuToggle() {
           <a href="/" class=" hover:text-orange-500 "onClick={() => setOpen(false)}>Inicio</a>
           <a href="#about" class="hover:text-orange-500 "onClick={() => setOpen(false)}>Sobre Nosotros</a>
           <a href="#services" class="hover:text-orange-500 "onClick={() => setOpen(false)}>Servicios</a>
+          <a href="#contact" class="hover:text-orange-500 "onClick={() => setOpen(false)}>Contacto</a>
           <a href="/Blog/" class="hover:text-orange-500 "onClick={() => setOpen(false)}>Blog</a>
         </div>
       )}
