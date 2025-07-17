@@ -1,10 +1,19 @@
 ---
 const background = "../../../public/bg-star.webp";
+const { title, span, description, url, cta } = Astro.props;
 ---
 
 <div
-  class="bg-cover w-full h-[100vh] mt-20"
+  class="bg-cover w-full h-[100vh] mt-20 flex items-center justify-center flex-col"
   style={{ backgroundImage: `url(${background})` }}
 >
-  <h1>holafffffffffffffffffffffffff</h1>
+  <h1 class="md:text-6xl font-sans text-white mb-3">
+    {title}<span class="md:text-6xl font-sans text-orange-500">{span}</span>
+  </h1>
+  <p class="md:text-xl text-white font-mono mb-6">{description}</p>
+  <a
+    href={url}
+    class="bg-orange-500 md:w-fit px-3 py-1 rounded-lg text-2xl text-white"
+    >{cta}</a
+  >
 </div>
