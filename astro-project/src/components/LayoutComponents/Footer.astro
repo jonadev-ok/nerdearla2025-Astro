@@ -1,6 +1,16 @@
-<footer class="bottom-4 left-0 w-full">
+---
+const { text, url, Authors } = Astro.props;
+---
+
+<footer
+  class="bottom-4 top-4 flex left-0 w-full h-20 justify-center items-center"
+>
   <p class="text-center text-base font-extralight text-gray-200">
-    &copy; {new Date().getFullYear()} Workshop de nerdearla | Astro - El futuro de
-    las webs estaticas. Todos los derechos reservados.
+    &copy; {new Date().getFullYear()}
+    {text[0]}
+    <a href={url[0]} target="_blank" class="text-blue-500">{Authors[0]}</a>
+    {text[1]}
+    <a href={url[1]} target="_blank" class="text-orange-500">{Authors[1]}</a>
+    {text[2]}
   </p>
 </footer>
