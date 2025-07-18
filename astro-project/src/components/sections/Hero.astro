@@ -4,16 +4,21 @@ const { title, span, description, url, cta } = Astro.props;
 ---
 
 <div
-  class="bg-cover w-full h-[100vh] mt-20 flex items-center justify-center flex-col"
+  class="bg-cover text-center w-full h-[100vh] mt-20 flex items-center justify-center flex-col"
   style={{ backgroundImage: `url(${background})` }}
 >
   <h1 class="md:text-6xl font-sans text-white mb-3">
-    {title}<span class="md:text-6xl font-sans text-orange-500">{span}</span>
+    {title}<span
+      class="md:text-6xl font-sans text-orange-500 text-shadow-2xs text-shadow-white"
+      >{span}</span
+    >
   </h1>
-  <p class="md:text-xl text-white font-mono mb-6">{description}</p>
+  <p class="md:text-2xl w-[950px] text-white font-mono mb-6">
+    {description}
+  </p>
   <a
     href={url}
-    class="bg-orange-500 md:w-fit px-3 py-1 rounded-lg text-2xl text-white"
+    class="inline-block px-6 py-3 text-white font-light font-sans rounded bg-gradient-to-r from-orange-500 to-black text-3xl hover:from-black hover:to-orange-500 hover:transition-all"
     >{cta}</a
   >
 </div>
