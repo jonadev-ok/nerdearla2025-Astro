@@ -1,6 +1,7 @@
 ---
 import Hero from "../components/sections/Hero.astro";
 import Layout from "../layouts/Layout.astro";
+import Section from "../components/sections/Section.astro";
 const data = {
   title: "Bienvenidos a ",
   span: "Astro Devs",
@@ -12,7 +13,7 @@ const data = {
 ---
 
 <Layout>
-  <section class="w-full h-[100vh] text-center mt-20">
+  <Section>
     <Hero {...data} />
-  </section>
+  </Section>
 </Layout>
