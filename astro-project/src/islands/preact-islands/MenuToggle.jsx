@@ -15,7 +15,7 @@ export default function MenuToggle() {
       {open && (
         <div className="absolute right-0 mt-15 text-white shadow p-4 flex flex-col gap-4">
             
-          <a href="/" class=" hover:text-orange-500 "onClick={() => setOpen(false)}>Inicio</a>
+          <a href="#home" class=" hover:text-orange-500 "onClick={() => setOpen(false)}>Inicio</a>
           <a href="#services" class="hover:text-orange-500 "onClick={() => setOpen(false)}>Servicios</a>
           <a href="#contact" class="hover:text-orange-500 "onClick={() => setOpen(false)}>Contacto</a>
           <a href="/Blog/" class="hover:text-orange-500 "onClick={() => setOpen(false)}>Blog</a>
