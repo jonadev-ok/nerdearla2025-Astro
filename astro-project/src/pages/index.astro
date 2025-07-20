@@ -2,6 +2,7 @@
 import Hero from "../components/sections/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/sections/SectionContainer.astro";
+import Services from "../components/sections/Services.astro";
 const data = {
   title: "Bienvenidos a ",
   span: "Astro Devs",
@@ -16,6 +17,9 @@ const data = {
   <main role="main">
     <SectionContainer>
       <Hero {...data} />
+    </SectionContainer>
+    <SectionContainer id="services">
+      <Services />
     </SectionContainer>
   </main>
 </Layout>
