@@ -3,7 +3,6 @@ import Hero from "../components/sections/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/sections/SectionContainer.astro";
 import Services from "../components/sections/Services.astro";
-import TitleContainer from "../components/ui/TitleContainer.astro";
 const data = {
   title: "Bienvenidos a ",
   span: "Astro Devs",
@@ -20,9 +19,7 @@ const data = {
       <Hero {...data} />
     </SectionContainer>
     <SectionContainer id="services">
-      <Services>
-        <TitleContainer> Nuestros servicios </TitleContainer>
-      </Services>
+      <Services />
     </SectionContainer>
   </main>
 </Layout>
