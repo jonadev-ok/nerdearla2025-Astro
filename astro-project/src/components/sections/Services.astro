@@ -1,8 +1,13 @@
 ---
+import TitleContainer from "../ui/TitleContainer.astro";
+const dataTitle = {
+  title: "hola",
+  span: "chau",
+};
 ---
 
 <div
   class="bg-cover text-center my-20 w-full h-[100vh] flex items-center justify-center flex-col"
 >
-  
+  <TitleContainer {...dataTitle} />
 </div>
