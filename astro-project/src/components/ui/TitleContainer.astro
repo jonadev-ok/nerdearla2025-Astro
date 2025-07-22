@@ -1,7 +1,10 @@
 ---
-const { title, span } = Astro.props;
+const { headingLevel = "h2", className = "" } = Astro.props;
+const Tag = headingLevel;
 ---
 
-<h2 class={"flex justify-center text-3xl font-semibold text-white"}>
-  {title}<span class="">{span}</span>
-</h2>
+<Tag
+  class={`flex justify-center text-3xl font-semibold text-white ${className}`}
+>
+  <slot />
+</Tag>
