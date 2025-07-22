@@ -1,9 +1,27 @@
 ---
 import TitleContainer from "../ui/TitleContainer.astro";
+import Card from "../ui/Card.astro";
+const cardServices = [
+  { title: "titulo1", description: "desc1", link: "#", btnText: "ver mas" },
+  { title: "titulo1", description: "desc1", link: "#", btnText: "ver mas" },
+  { title: "titulo1", description: "desc1", link: "#", btnText: "ver mas" },
+];
 ---
 
 <div class="bg-cover text-center my-20 w-full flex flex-col">
   <TitleContainer headingLevel="h2">
     Nuestros <span class="text-orange-500">servicios</span>
   </TitleContainer>
+  <div class="flex mt-20 justify-center 2xl:w-full text-white">
+    {
+      cardServices.map((c: any) => (
+        <Card
+          title={c.title}
+          description={c.description}
+          link={c.link}
+          btnText={c.btnText}
+        />
+      ))
+    }
+  </div>
 </div>
