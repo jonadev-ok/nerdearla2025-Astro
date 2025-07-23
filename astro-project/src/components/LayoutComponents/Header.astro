@@ -1,7 +1,7 @@
 ---
 import AstroLogo from "../../../public/logos/Astro_dark.svg";
 import GitHubLogo from "../../../public/logos/GitHubLogo.svg";
-import MenuToggle from "../../islands/preact-islands/MenuToggle";
+import MenuToggle from "../../islands/astro-islands/MenuToggle.astro";
 
 const { pathname } = Astro.url;
 const itemsNav = [
@@ -67,5 +67,5 @@ const itemsNav = [
       <img src={GitHubLogo.src} class="m-3 w-7" alt="repositorio" />
     </a>
   </div>
-  <MenuToggle client:load />
+  <MenuToggle />
 </header>

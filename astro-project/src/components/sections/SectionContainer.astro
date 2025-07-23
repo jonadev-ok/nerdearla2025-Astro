@@ -1,7 +1,11 @@
 ---
-const { class: className, id } = Astro.props;
+const { id, bgImage } = Astro.props;
 ---
 
-<section id={id} data-section={id} class="w-full h-[100vh]">
+<section
+  id={id ? id : undefined}
+  class="bg-cover text-center w-full h-[100vh] pt-20 flex items-center justify-center flex-col"
+  style={{ backgroundImage: bgImage ? `url(${bgImage})` : "none" }}
+>
   <slot />
 </section>

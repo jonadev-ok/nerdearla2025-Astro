@@ -10,16 +10,13 @@ const data = {
     "Una agencia dedicada a ofrecer soluciones web de alto rendimiento para hacer crecer tu negocio.",
   url: "#services",
   cta: "Conoce nuestros servicios",
+  bgImage: "../../public/backgrounds/bg-star.webp",
 };
 ---
 
 <Layout>
   <main role="main">
-    <SectionContainer id="home">
-      <Hero {...data} />
-    </SectionContainer>
-    <SectionContainer id="services">
-      <Services />
-    </SectionContainer>
+    <Hero {...data} />
+    <Services />
   </main>
 </Layout>

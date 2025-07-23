@@ -1,6 +1,9 @@
 ---
 import TitleContainer from "../ui/TitleContainer.astro";
+import ParagraphContainer from "../ui/paragraphContainer.astro";
 import Card from "../ui/Card.astro";
+import SectionContainer from "./SectionContainer.astro";
+// const background = "../../../public/backgrounds/bg-space.webp";
 const cardServices = [
   { title: "titulo1", description: "desc1", link: "#", btnText: "ver mas" },
   { title: "titulo1", description: "desc1", link: "#", btnText: "ver mas" },
@@ -8,11 +11,14 @@ const cardServices = [
 ];
 ---
 
-<div class="bg-cover text-center my-20 w-full flex flex-col">
-  <TitleContainer headingLevel="h2">
+<SectionContainer id="services">
+  <TitleContainer headingLevel="h2" className="mb-5">
     Nuestros <span class="text-orange-500">servicios</span>
   </TitleContainer>
-  <div class="flex mt-20 justify-center 2xl:w-full text-white">
+  <ParagraphContainer>
+    Aqui vas a encontrar todos nuestros servicios
+  </ParagraphContainer>
+  <div class="flex mt-3 justify-center 2xl:w-full text-white">
     {
       cardServices.map((c: any) => (
         <Card
@@ -24,4 +30,4 @@ const cardServices = [
       ))
     }
   </div>
-</div>
+</SectionContainer>
