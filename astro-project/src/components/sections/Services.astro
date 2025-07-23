@@ -14,7 +14,8 @@ const cardServices = [
   },
   {
     title: "Gestión y mantenimiento",
-    description: "desc1",
+    description:
+      "Ya tenes una web pero no estas consiguiendo resultados? Deja todo en nuestras manos. Nosotros la actualizamos y le damos mantenimiento 24/7",
     link: "#contact",
     btnText: "Saber mas..",
   },
@@ -34,7 +35,7 @@ const cardServices = [
   <ParagraphContainer>
     Aqui vas a encontrar todos nuestros servicios
   </ParagraphContainer>
-  <div class="flex mt-3 justify-center 2xl:w-full text-white">
+  <div class="flex col-3 mt-3 justify-center 2xl:w-full text-white">
     {
       cardServices.map((c: any) => (
         <Card
