@@ -2,19 +2,27 @@
 const { text, url, Authors } = Astro.props;
 ---
 
-<footer
-  class="bottom-4 top-4 flex left-0 w-full h-20 justify-center items-center"
->
+<footer class="flex w-full h-20 justify-center items-center">
   <p class="text-center text-xl font-extralight text-gray-200">
-    &copy; {new Date().getFullYear()}
-    {text[0]}
-    <a href={url[0]} target="_blank" class="text-blue-500"
-      ><i>{Authors[0]}</i></a
+    &copy; {new Date().getFullYear()}{" "}
+    {text?.[0] ?? ""}
+    <a
+      href={url?.[0] ?? "#"}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-blue-500 italic"
     >
-    {text[1]}
-    <a href={url[1]} target="_blank" class="text-orange-500"
-      ><b>{Authors[1]}</b></a
+      {Authors?.[0] ?? "Autor 1"}
+    </a>{" "}
+    {text?.[1] ?? ""}
+    <a
+      href={url?.[1] ?? "#"}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-orange-500 font-bold"
     >
-    {text[2]}
+      {Authors?.[1] ?? "Autor 2"}
+    </a>{" "}
+    {text?.[2] ?? ""}
   </p>
 </footer>
