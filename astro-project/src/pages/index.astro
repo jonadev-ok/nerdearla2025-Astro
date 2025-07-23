@@ -1,6 +1,6 @@
 ---
 import Hero from "../components/sections/Hero.astro";
-import Layout from "../layouts/Layout.astro";
+import LayoutBase from "../layouts/LayoutBase.astro";
 import SectionContainer from "../components/sections/SectionContainer.astro";
 import Services from "../components/sections/Services.astro";
 const data = {
@@ -14,9 +14,9 @@ const data = {
 };
 ---
 
-<Layout>
+<LayoutBase>
   <main role="main">
     <Hero {...data} />
     <Services />
   </main>
-</Layout>
+</LayoutBase>
