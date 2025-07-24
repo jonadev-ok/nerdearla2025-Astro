@@ -3,6 +3,7 @@ import TitleContainer from "../ui/TitleContainer.astro";
 import ParagraphContainer from "../ui/paragraphContainer.astro";
 import Card from "../ui/Card.astro";
 import SectionContainer from "./SectionContainer.astro";
+import GleamIcon from "../../icons/GleamIcon.astro";
 // const background = "../../../public/backgrounds/bg-space.webp";
 const cardServices = [
   {
@@ -29,8 +30,11 @@ const cardServices = [
 ---
 
 <SectionContainer id="services">
-  <TitleContainer headingLevel="h2" className="mb-5">
-    Nuestros <span class="text-orange-500">servicios</span>
+  <TitleContainer
+    headingLevel="h2"
+    className="mb-5 flex justify-center items-center"
+    ><span class="text-orange-500"><GleamIcon class="w-10 h-10" /></span>
+    Nuestros servicios
   </TitleContainer>
   <ParagraphContainer>
     Aqui vas a encontrar todos nuestros servicios
