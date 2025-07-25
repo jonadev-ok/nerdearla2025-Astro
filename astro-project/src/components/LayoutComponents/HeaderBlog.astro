@@ -1,0 +1,16 @@
+---
+import Header from "../LayoutComponents/Header.astro";
+
+const navItems = [
+  { title: "Inicio", label: "Inicio", url: "/" },
+  { title: "Blog", label: "Blog", url: "/Blog/" },
+];
+---
+
+<Header
+  logo="/logos/Astro_dark.svg"
+  brand="Astro"
+  highlight="devs"
+  navItems={navItems}
+  githubUrl="https://github.com"
+/>

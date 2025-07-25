@@ -1,7 +1,7 @@
 ---
 import ButtonScroll from "../components/islands/ButtonScroll";
 import Footer from "../components/LayoutComponents/Footer.astro";
-import HeaderLanding from "../components/LayoutComponents/HeaderLanding.astro";
+import HeaderBlog from "../components/LayoutComponents/HeaderBlog.astro";
 import "../styles/global.css";
 const {
   title = "Astro devs",
@@ -30,7 +30,7 @@ const footerDate = {
     <title>{title}</title>
   </head>
   <body>
-    <HeaderLanding />
+    <HeaderBlog />
     <slot />
     <ButtonScroll client:load />
     <Footer {...footerDate} />
