@@ -8,5 +8,5 @@ author: "Jonatan Villalva - JonaDev"
 image:
   url: ""
   alt: "Banner de blog."
-tags: ["Desarrollo web"]
+tags: ["Ux/Ui"]
 ---
