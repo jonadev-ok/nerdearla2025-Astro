@@ -1,45 +1,44 @@
 ---
-import AstroLogo from "../../../public/logos/Astro_dark.svg";
-import GitHubLogo from "../../../public/logos/GitHubLogo.svg";
-import MenuToggle from "../../islands/astro-islands/MenuToggle.astro";
+interface NavItem {
+  title: string;
+  label: string;
+  url: string;
+}
+
+interface Props {
+  logo: string; // Ruta de imagen
+  logoAlt?: string; // Texto alternativo del logo
+  brand: string; // Texto principal
+  highlight: string; // Texto destacado
+  navItems: NavItem[];
+  githubUrl?: string; // Opcional
+}
+
+const {
+  logo,
+  logoAlt = "Logo",
+  brand,
+  highlight,
+  navItems,
+  githubUrl,
+} = Astro.props;
 
 const { pathname } = Astro.url;
-const itemsNav = [
-  {
-    title: "Inicio",
-    label: "Inicio",
-    url: "#home",
-  },
-  {
-    title: "Servicios",
-    label: "Servicios",
-    url: "#services",
-  },
-  {
-    title: "Contacto",
-    label: "Contacto",
-    url: "#contact",
-  },
-  {
-    title: "Blog",
-    label: "Blog",
-    url: "/Blog/",
-  },
-];
 ---
 
 <header
   class="fixed top-0 bg-transparent flex w-full items-center justify-between sm:px-1 px-2"
 >
   <div class="flex justify-center items-center md:w-50 sm:w-90 h-auto">
-    <img src={AstroLogo.src} class="m-4 w-7 h-auto" alt="logo" />
+    <img src={logo} class="m-4 w-7 h-auto" alt={logoAlt} />
     <h2 class="my-3 text-orange-500 font-bold text-2xl">
-      Astro<span class="text-white font-bold text-2xl"> devs</span>
+      {brand}<span class="text-white font-bold text-2xl"> {highlight}</span>
     </h2>
   </div>
+
   <nav class="w-100 hidden md:flex gap-3 justify-center">
     {
-      itemsNav.map((link: any) => {
+      navItems.map((link) => {
         const isActive =
           link.url === "/" ? pathname === "/" : pathname.startsWith(link.url);
         return (
@@ -58,14 +57,18 @@ const itemsNav = [
       })
     }
   </nav>
-  <div class="flex justify-center items-center w-20 h-auto">
-    <a
-      class="sm:hidden md:block flex text-white"
-      href="https://github.com"
-      target="_blank"
-    >
-      <img src={GitHubLogo.src} class="m-3 w-7" alt="repositorio" />
-    </a>
-  </div>
-  <MenuToggle />
+
+  {
+    githubUrl && (
+      <div class="flex justify-center items-center w-20 h-auto">
+        <a
+          class="sm:hidden md:block flex text-white"
+          href={githubUrl}
+          target="_blank"
+        >
+          <img src="/logos/GitHubLogo.svg" class="m-3 w-7" alt="GitHub Repo" />
+        </a>
+      </div>
+    )
+  }
 </header>

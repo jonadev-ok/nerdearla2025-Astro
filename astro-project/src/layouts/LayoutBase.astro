@@ -1,6 +1,6 @@
 ---
 import Footer from "../components/LayoutComponents/Footer.astro";
-import Header from "../components/LayoutComponents/Header.astro";
+import HeaderLanding from "../components/LayoutComponents/HeaderLanding.astro";
 import "../styles/global.css";
 const {
   title = "Astro devs",
@@ -29,7 +29,7 @@ const footerDate = {
     <title>{title}</title>
   </head>
   <body>
-    <Header />
+    <HeaderLanding />
     <slot />
     <Footer {...footerDate} />
   </body>
