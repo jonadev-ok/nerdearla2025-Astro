@@ -4,15 +4,9 @@ interface Props {
   description: string;
   link: string;
   btnText: string;
-  maxLength?: number;
 }
 
-const { title, description, link, btnText, maxLength = 100 } = Astro.props;
-
-const shortDescription =
-  description.length > maxLength
-    ? description.slice(0, maxLength) + "..."
-    : description;
+const { title, description, link, btnText } = Astro.props;
 ---
 
 <article
@@ -24,8 +18,8 @@ const shortDescription =
     {title}
   </h3>
 
-  <p class="text-center px-3 text-gray-600 dark:text-gray-300 line-clamp-3">
-    {shortDescription}
+  <p class="text-center px-3 text-gray-600 dark:text-gray-300">
+    {description}
   </p>
 
   <a
