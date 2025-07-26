@@ -10,7 +10,7 @@ const { title, description, link, btnText } = Astro.props;
 ---
 
 <article
-  class="bg-gradient-to-r from-orange-500 to-red-700 hover:from-red-700 hover:to-orange-500 transition-colors duration-1000 ease-in-out hover:bg-neutral-700 rounded-2xl w-90 h-60 overflow-hidden shadow-lg flex flex-col mx-2"
+  class="bg-gradient-to-r from-orange-500 to-red-700 hover:from-red-700 hover:to-orange-500 transition-colors duration-300 ease-in-out hover:bg-neutral-700 rounded-2xl w-90 h-60 overflow-hidden shadow-lg flex flex-col mx-2"
 >
   <h3
     class="text-xl font-semibold text-white text-shadow-md text-shadow-gray-700 m-4"
@@ -18,13 +18,15 @@ const { title, description, link, btnText } = Astro.props;
     {title}
   </h3>
 
-  <p class="text-center px-3 text-gray-600 dark:text-gray-300">
+  <p
+    class="text-center px-3 text-gray-600 dark:text-gray-300 hover:animate-pulse"
+  >
     {description}
   </p>
 
   <a
     href={link}
-    class="mt-auto text-primary mb-4 font-bold hover:text-cyan-500 hover:animate-pulse"
+    class="mt-auto text-primary mb-4 text-white hover:text-white hover:text-shadow-md hover:text-shadow-black"
   >
     {btnText}
   </a>
