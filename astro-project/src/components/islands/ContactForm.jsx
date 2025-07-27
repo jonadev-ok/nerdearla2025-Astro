@@ -1,4 +1,3 @@
-// src/components/ContactForm.jsx
 import { useState } from 'preact/hooks';
 
 export default function ContactForm() {
@@ -17,7 +16,7 @@ export default function ContactForm() {
     });
 
     if (response.ok) {
-      setStatus('✅ Mensaje enviado');
+      setStatus('✅ Mensaje enviado con éxito.');
       form.reset();
     } else {
       setStatus('❌ Hubo un error. Intentalo de nuevo.');
@@ -29,35 +28,62 @@ export default function ContactForm() {
       action="https://formsubmit.co/tucorreo@dominio.com"
       method="POST"
       onSubmit={handleSubmit}
-      class="flex flex-col gap-4"
+      class="flex flex-col gap-y-4 max-w-2xl w-full mx-auto p-8 my-8 bg-gradient-to-r from-orange-500 to-red-700 rounded-lg shadow-lg"
     >
-      <input
-        type="text"
-        name="name"
-        placeholder="Tu nombre"
+      <h2 class="text-2xl text-white font-bold mb-2">Contáctanos</h2>
+
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input
+          type="text"
+          name="name"
+          placeholder="Tu nombre"
+          required
+          class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Tu correo"
+          required
+          class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300"
+        />
+      </div>
+
+      <select
+        name="consulta"
         required
-        class="border p-2"
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder="Tu correo"
-        required
-        class="border p-2"
-      />
+        class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300"
+      >
+        <option value="">¿Cuál es tu consulta?</option>
+        <option>Desarrollo web</option>
+        <option>Gestión y mantenimiento</option>
+        <option>Marketing digital</option>
+      </select>
+
       <textarea
         name="message"
         placeholder="Tu mensaje"
         required
-        class="border p-2"
-      />
+        rows="5"
+        class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300"
+      ></textarea>
+
       <button
         type="submit"
-        class="bg-blue-600 text-white px-4 py-2 rounded"
+        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded w-full md:w-auto transition"
       >
-        Enviar
+        Enviar mensaje
       </button>
-      {status && <p>{status}</p>}
+
+      {status && (
+        <p
+          class={`mt-2 font-semibold ${
+            status.startsWith('✅') ? 'text-green-600' : 'text-red-600'
+          }`}
+        >
+          {status}
+        </p>
+      )}
     </form>
   );
 }
