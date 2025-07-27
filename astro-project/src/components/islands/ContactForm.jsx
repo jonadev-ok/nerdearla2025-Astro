@@ -28,9 +28,9 @@ export default function ContactForm() {
       action="https://formsubmit.co/tucorreo@dominio.com"
       method="POST"
       onSubmit={handleSubmit}
-      class="flex flex-col gap-y-4 max-w-2xl w-full mx-auto p-8 my-8 bg-gradient-to-r from-orange-500 to-red-700 rounded-lg shadow-lg"
+      class="flex flex-col gap-y-4 max-w-2xl w-full mx-auto p-2 my-4 bg-gradient-to-r from-orange-500 to-red-700 rounded-lg shadow-lg"
     >
-      <h2 class="text-2xl text-white font-bold mb-2">Contáctanos</h2>
+      <h2 class="text-2xl text-white font-bold mb-2">Dejanos tu consulta</h2>
 
       <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
         <input
@@ -38,21 +38,21 @@ export default function ContactForm() {
           name="name"
           placeholder="Tu nombre"
           required
-          class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300"
+          class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300 focus:border-transparent"
         />
         <input
           type="email"
           name="email"
           placeholder="Tu correo"
           required
-          class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300"
+          class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300 focus:border-transparent"
         />
       </div>
 
       <select
         name="consulta"
         required
-        class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300"
+        class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300 focus:border-transparent"
       >
         <option value="">¿Cuál es tu consulta?</option>
         <option>Desarrollo web</option>
@@ -65,7 +65,7 @@ export default function ContactForm() {
         placeholder="Tu mensaje"
         required
         rows="5"
-        class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300"
+        class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300 focus:border-transparent"
       ></textarea>
 
       <button
