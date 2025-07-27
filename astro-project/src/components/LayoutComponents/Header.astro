@@ -1,4 +1,6 @@
 ---
+import Tooltip from "../ui/Tooltip.astro";
+
 interface NavItem {
   title: string;
   label: string;
@@ -61,13 +63,19 @@ const { pathname } = Astro.url;
   {
     githubUrl && (
       <div class="flex justify-center items-center w-20 h-auto">
-        <a
-          class="sm:hidden md:block flex text-white"
-          href={githubUrl}
-          target="_blank"
-        >
-          <img src="/logos/GitHubLogo.svg" class="m-3 w-7" alt="GitHub Repo" />
-        </a>
+        <Tooltip text="Visita el repositorio del proyecto">
+          <a
+            class="sm:hidden md:block flex text-white"
+            href={githubUrl}
+            target="_blank"
+          >
+            <img
+              src="/logos/GitHubLogo.svg"
+              class="m-3 w-7"
+              alt="GitHub Repo"
+            />
+          </a>
+        </Tooltip>
       </div>
     )
   }

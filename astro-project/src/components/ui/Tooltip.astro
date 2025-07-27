@@ -1,0 +1,16 @@
+---
+const { text } = Astro.props;
+---
+
+<div class="relative inline-block group">
+  <slot />
+
+  <div
+    class="absolute right-full top-1/2 -translate-y-1/2 ml-2
+           bg-orange-500 text-white text-xs rounded-l-xl rounded-t-xl px-2 py-1
+           whitespace-nowrap z-10
+           opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
+  >
+    {text}
+  </div>
+</div>
