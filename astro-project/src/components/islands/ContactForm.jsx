@@ -28,9 +28,9 @@ export default function ContactForm() {
       action="https://formsubmit.co/tucorreo@dominio.com"
       method="POST"
       onSubmit={handleSubmit}
-      class="flex flex-col gap-y-4 max-w-2xl w-full mx-auto p-2 my-4 bg-gradient-to-r from-orange-500 to-red-700 rounded-lg shadow-lg"
+      class="flex flex-col gap-y-4 max-w-2xl w-3xl mx-auto p-2 my-4 bg-gradient-to-r from-orange-500 to-red-700 rounded-lg shadow-lg"
     >
-      <h2 class="text-2xl text-white font-bold mb-2">Dejanos tu consulta</h2>
+      <h2 class="text-2xl text-center text-white font-bold mb-2">Dejanos tu consulta</h2>
 
       <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
         <input
@@ -52,12 +52,12 @@ export default function ContactForm() {
       <select
         name="consulta"
         required
-        class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300 focus:border-transparent"
+        class="border rounded p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-300 focus:border-transparent bg-transparent hover:bg-orange-500"
       >
-        <option value="">¿Cuál es tu consulta?</option>
-        <option>Desarrollo web</option>
-        <option>Gestión y mantenimiento</option>
-        <option>Marketing digital</option>
+        <option value="" disabled selected hidden>¿Cuál es tu consulta?</option>
+        <option value="web-dev">Desarrollo web</option>
+        <option value="mantenimiento">Gestión y mantenimiento</option>
+        <option value="marketing">Marketing digital</option>
       </select>
 
       <textarea
