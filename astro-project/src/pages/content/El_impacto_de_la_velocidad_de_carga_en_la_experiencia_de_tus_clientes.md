@@ -8,7 +8,7 @@ author: "Jonatan Villalva - JonaDev"
 image:
   url: ""
   alt: "Banner de blog."
-tags: ["Ux - Ui"]
+tags: ["Ux-Ui"]
 ---
 
 En la era digital, la paciencia de los usuarios es muy limitada. Si una página tarda demasiado en cargar, la mayoría simplemente se va a buscar otra opción. Estudios demuestran que un retraso de apenas un segundo puede reducir significativamente las conversiones y aumentar la tasa de rebote.

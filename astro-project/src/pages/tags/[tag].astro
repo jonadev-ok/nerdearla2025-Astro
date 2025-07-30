@@ -2,6 +2,19 @@
 import LayoutBlog from "../../layouts/LayoutBlog.astro";
 import HeaderBlog from "../../components/LayoutComponents/HeaderBlog.astro";
 import BlogArticle from "../../components/blog/BlogArticle.astro";
+interface Post {
+  url: string;
+  frontmatter: {
+    title: string;
+    pubDate: string;
+    tags: string[];
+    description: string;
+  };
+}
+
+interface Props {
+  posts: Post[];
+}
 export async function getStaticPaths(): Promise<any> {
   const allPosts = await Astro.glob("../content/*.md");
   const filterDate = allPosts.sort(
@@ -38,7 +51,7 @@ const { posts } = Astro.props;
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-full px-5 py-3"
     >
       {
-        posts.map((post) => (
+        posts.map((post: any) => (
           <BlogArticle
             url={post.url}
             title={post.frontmatter.title}
