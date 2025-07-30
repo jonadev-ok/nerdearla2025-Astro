@@ -20,14 +20,6 @@ const allPosts = (await Astro.glob("../content/*.md")).sort(
       {
         allPosts.map((post) => (
           <article class="bg-neutral-800 hover:bg-neutral-700 rounded-2xl w-100 overflow-hidden shadow-lg transition flex flex-col mx-2">
-            {post.frontmatter.image && (
-              <img
-                src={post.frontmatter.image.url}
-                alt={post.frontmatter.title}
-                class="w-full h-48 object-cover"
-                loading="lazy"
-              />
-            )}
             <div class="p-3 flex flex-col gap-2">
               <h2 class="text-2xl font-bold text-white">
                 <a href={post.url} class="hover:underline">
