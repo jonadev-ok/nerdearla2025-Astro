@@ -1,0 +1,37 @@
+---
+import LayoutBlog from "./LayoutBlog.astro";
+import HeaderBlog from "../components/LayoutComponents/HeaderBlog.astro";
+const { frontmatter } = Astro.props;
+---
+
+<LayoutBlog title={frontmatter.title}>
+  <HeaderBlog />
+  <article class="w-full flex justify-center my-20 flex-col">
+    <img
+      class="mb-8"
+      src={frontmatter.image.url}
+      alt={frontmatter.title}
+      loading="lazy"
+    />
+    <h1 class="text-3xl md:text-4xl text-white font-bold mb-6 text-center">
+      {frontmatter.title}
+    </h1>
+    <h2>
+      <ul class="flex justify-center text-white">
+        <li class="px-2">📅{frontmatter.pubDate}</li>
+        <li class="px-2 flex flex-row">
+          {
+            frontmatter.tags.map((tag: any) => (
+              <p class="px-2 mx-2 flex flex-row bg-orange-500 rounded-sm">
+                <a class="text-white mx-2" href={`/tags/${tag}`}>
+                  {tag}
+                </a>
+              </p>
+            ))
+          }
+        </li>
+      </ul>
+    </h2>
+    <slot />
+  </article>
+</LayoutBlog>
