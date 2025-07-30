@@ -1,7 +1,7 @@
 ---
 import LayoutBlog from "../../layouts/LayoutBlog.astro";
 
-const posts = (await Astro.glob("../../pages/content/*.md")).map((post) => ({
+const posts = (await Astro.glob("../content/*.md")).map((post) => ({
   title: post.frontmatter.title,
   url: post.url,
 }));
@@ -18,7 +18,7 @@ const allPosts = (await Astro.glob("../content/*.md")).sort(
       class="grid grid-cols-1 sm:grid-cols-2 mt-20 lg:grid-cols-3 gap-6 w-full max-w-full px-5 py-3"
     >
       {
-        allPosts.map((post) => (
+        allPosts.map((post: any) => (
           <article class="bg-neutral-800 hover:bg-neutral-700 rounded-2xl w-100 overflow-hidden shadow-lg transition flex flex-col mx-2">
             <div class="p-3 flex flex-col gap-2">
               <h2 class="text-2xl font-bold text-white">

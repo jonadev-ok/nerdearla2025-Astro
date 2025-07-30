@@ -1,0 +1,53 @@
+---
+import LayoutBlog from "../../layouts/LayoutBlog.astro";
+import HeaderBlog from "../../components/LayoutComponents/HeaderBlog.astro";
+import BlogArticle from "../../components/blog/BlogArticle.astro";
+export async function getStaticPaths(): Promise<any> {
+  const allPosts = await Astro.glob("../content/*.md");
+  const filterDate = allPosts.sort(
+    (a, b) =>
+      new Date(b.frontmatter.pubDate).getTime() -
+      new Date(a.frontmatter.pubDate).getTime()
+  );
+  const uniqueTags = [
+    ...new Set(allPosts.map((post) => post.frontmatter.tags).flat()),
+  ];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post) =>
+      post.frontmatter.tags.includes(tag)
+    );
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+---
+
+<LayoutBlog pageTitle={tag}>
+  <HeaderBlog />
+  <section class="flex flex-col items-center w-full mb-20 py-25">
+    <h1 class="text-center text-5xl font-bold font-serif">
+      Entradas etiquetadas con {tag}
+    </h1>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-full px-5 py-3"
+    >
+      {
+        posts.map((post) => (
+          <BlogArticle
+            url={post.url}
+            title={post.frontmatter.title}
+            pubDate={post.frontmatter.pubDate}
+            tags={post.frontmatter.tags}
+            description={post.frontmatter.description}
+          />
+        ))
+      }
+    </div>
+  </section>
+</LayoutBlog>
