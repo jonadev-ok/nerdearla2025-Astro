@@ -1,13 +1,10 @@
 ---
 layout: ../../layouts/MdPostLayout.astro
 id: 6
-title: "¿Qué es el SEO y cómo puede hacer que tu negocio crezca?"
+title: "Qué es el SEO y cómo puede hacer que tu negocio crezca exponencialmente"
 pubDate: "25 septiembre,2025"
 description: "¿Queres saber que es el SEO y como puede hacer que tu negocio crezca de manera automatica? Mas visibilidad en la web, mejor posicionamiento, y mas.. Esto y mucho mas te contamos en este articulo"
 author: "Jonatan Villalva - JonaDev"
-image:
-  url: ""
-  alt: "Banner de blog."
 tags: ["SEO"]
 ---
 
