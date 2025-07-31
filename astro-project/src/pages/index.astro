@@ -3,20 +3,25 @@ import Hero from "../components/sections/Hero.astro";
 import LayoutBase from "../layouts/LayoutBase.astro";
 import Services from "../components/sections/Services.astro";
 import Contact from "../components/sections/Contact.astro";
-const data = {
-  title: "Bienvenidos a ",
-  span: "Astro Devs",
-  description:
-    "Una agencia dedicada a ofrecer soluciones web de alto rendimiento para hacer crecer tu negocio.",
-  url: "#services",
-  cta: "Conoce nuestros servicios",
-  bgImage: "../../public/backgrounds/bg-star.webp",
+
+const message = {
+  firstMessage: "Bienvenid@ y gracias por visitarnos!",
+  secondMessage: "Volvés a nuestra web, genial!",
 };
 ---
 
 <LayoutBase>
   <main role="main">
-    <Hero {...data} />
+    <Hero
+      title="Bienvenidos a "
+      span="Astro Devs"
+      description="Una agencia dedicada a ofrecer soluciones web de alto rendimiento para hacer crecer tu negocio."
+      ,
+      url="#services"
+      cta="Conoce nuestros servicios"
+      bgImage="../../public/backgrounds/bg-star.webp"
+      message={message}
+    />
     <Services />
     <Contact />
   </main>

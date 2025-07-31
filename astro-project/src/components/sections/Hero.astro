@@ -3,27 +3,29 @@ import Message from "../ui/Message.astro";
 import ParagraphContainer from "../ui/paragraphContainer.astro";
 import SectionContainer from "./SectionContainer.astro";
 
-const { title, span, description, url, cta, bgImage } = Astro.props;
-const message = {
-  firstMessage: "Bienvenid@ y gracias por visitarnos!",
-  secondMessage: "Bienvenid@ otra vez",
-};
+const { title, span, description, url, cta, bgImage, message } = Astro.props;
 ---
 
 <SectionContainer id="home" bgImage={bgImage}>
   <h1 class="md:text-6xl font-sans text-white mb-5">
-    {title}<span
+    {title}
+    <span
       class="md:text-6xl font-sans text-orange-500 text-shadow-2xs text-shadow-white"
-      >{span}</span
     >
+      {span}
+    </span>
   </h1>
+
   <ParagraphContainer>
     {description}
   </ParagraphContainer>
+
   <a
     href={url}
     class="inline-block px-5 py-3 text-white font-light font-sans rounded-xl bg-gradient-to-r from-orange-500 to-black text-3xl hover:from-black hover:to-orange-500 transition-colors duration-1000 ease-in-out"
-    >{cta}</a
   >
+    {cta}
+  </a>
+
   <Message {...message} client:load />
 </SectionContainer>

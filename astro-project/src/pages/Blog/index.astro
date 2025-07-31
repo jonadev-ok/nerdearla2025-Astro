@@ -2,14 +2,9 @@
 import LayoutBlog from "../../layouts/LayoutBlog.astro";
 import Hero from "../../components/sections/Hero.astro";
 
-const data = {
-  title: "Bienvenidos a ",
-  span: "nuestro Blog",
-  description:
-    "Aqui vas a encontrar diversos articulos que te ayudaran a entender que es lo que necesita tu negocio para crecer",
-  url: "#articles",
-  cta: "Explora nuestros articulos",
-  bgImage: "../../../public/backgrounds/bg-galaxy.webp",
+const message = {
+  firstMessage: "Bienvenid@ a nuestro blog!",
+  secondMessage: "Volvés a nuestro blog, revisa nuestras novedades!",
 };
 
 const posts = (await Astro.glob("../content/*.md")).map((post) => ({
@@ -25,7 +20,16 @@ const allPosts = (await Astro.glob("../content/*.md")).sort(
 
 <LayoutBlog>
   <main role="main">
-    <Hero {...data} />
+    <Hero
+      title="Bienvenidos a "
+      span="Nuestro Blog"
+      description="Aqui vas a encontrar diversos articulos que te ayudaran a entender que es lo que necesita tu negocio para crecer"
+      ,
+      url="#articles"
+      cta="Explora nuestros articulos"
+      bgImage="../../../public/backgrounds/bg-galaxy.webp"
+      message={message}
+    />
     <div
       id="articles"
       class="grid grid-cols-1 sm:grid-cols-2 mt-20 h-auto lg:grid-cols-3 gap-6 w-full max-w-full px-5 py-20"

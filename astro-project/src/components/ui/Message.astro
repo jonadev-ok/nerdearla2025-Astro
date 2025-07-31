@@ -1,5 +1,9 @@
 ---
 const { firstMessage, secondMessage } = Astro.props;
+interface Props {
+  firstMessage: string;
+  secondMessage: string;
+}
 ---
 
 <div
@@ -24,12 +28,10 @@ const { firstMessage, secondMessage } = Astro.props;
     localStorage.setItem("hasVisited", "true");
   }
 
-  // Esperar 1 segundo para mostrarlo
   setTimeout(() => {
     messageEl.textContent = message;
     messageEl.style.opacity = "1";
 
-    // Después de 4 segundos, ocultarlo
     setTimeout(() => {
       messageEl.style.opacity = "0";
     }, 3000);
