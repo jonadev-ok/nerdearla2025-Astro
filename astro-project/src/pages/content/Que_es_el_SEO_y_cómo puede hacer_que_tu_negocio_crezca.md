@@ -8,7 +8,7 @@ author: "Jonatan Villalva - JonaDev"
 image:
   url: ""
   alt: "Banner de blog."
-tags: ["SEO", "Desarrollo web"]
+tags: ["SEO"]
 ---
 
 SEO, o "optimización para motores de búsqueda", es el proceso de mejorar tu sitio web para que aparezca entre los primeros resultados cuando alguien busca productos o servicios relacionados con tu negocio.

@@ -3,15 +3,14 @@ import Message from "../ui/Message.astro";
 import ParagraphContainer from "../ui/paragraphContainer.astro";
 import SectionContainer from "./SectionContainer.astro";
 
-const background = "../../../public/backgrounds/bg-star.webp";
-const { title, span, description, url, cta } = Astro.props;
+const { title, span, description, url, cta, bgImage } = Astro.props;
 const message = {
   firstMessage: "Bienvenid@ y gracias por visitarnos!",
   secondMessage: "Bienvenid@ otra vez",
 };
 ---
 
-<SectionContainer id="home" bgImage={background}>
+<SectionContainer id="home" bgImage={bgImage}>
   <h1 class="md:text-6xl font-sans text-white mb-5">
     {title}<span
       class="md:text-6xl font-sans text-orange-500 text-shadow-2xs text-shadow-white"

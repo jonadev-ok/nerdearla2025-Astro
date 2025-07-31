@@ -1,5 +1,16 @@
 ---
 import LayoutBlog from "../../layouts/LayoutBlog.astro";
+import Hero from "../../components/sections/Hero.astro";
+
+const data = {
+  title: "Bienvenidos a ",
+  span: "nuestro Blog",
+  description:
+    "Aqui vas a encontrar diversos articulos que te ayudaran a entender que es lo que necesita tu negocio para crecer",
+  url: "#articles",
+  cta: "Explora nuestros articulos",
+  bgImage: "../../../public/backgrounds/bg-galaxy.webp",
+};
 
 const posts = (await Astro.glob("../content/*.md")).map((post) => ({
   title: post.frontmatter.title,
@@ -14,8 +25,10 @@ const allPosts = (await Astro.glob("../content/*.md")).sort(
 
 <LayoutBlog>
   <main role="main">
+    <Hero {...data} />
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 mt-20 lg:grid-cols-3 gap-6 w-full max-w-full px-5 py-3"
+      id="articles"
+      class="grid grid-cols-1 sm:grid-cols-2 mt-20 h-auto lg:grid-cols-3 gap-6 w-full max-w-full px-5 py-20"
     >
       {
         allPosts.map((post: any) => (
@@ -31,7 +44,7 @@ const allPosts = (await Astro.glob("../content/*.md")).sort(
                 {post.frontmatter.tags.map((tag: any) => (
                   <a
                     href={`/tags/${tag}`}
-                    class="bg-blue-600 text-white px-2 py-1 rounded-md hover:bg-blue-500 transition"
+                    class="bg-orange-500 text-white px-2 py-1 rounded-md hover:bg-orange-600 transition"
                   >
                     {tag}
                   </a>
@@ -42,7 +55,7 @@ const allPosts = (await Astro.glob("../content/*.md")).sort(
               </p>
               <a
                 href={post.url}
-                class="text-blue-500 hover:underline font-medium"
+                class="text-orange-500 hover:underline hover:text-orange-600 font-medium"
               >
                 Leer más →
               </a>
