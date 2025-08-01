@@ -1,6 +1,6 @@
 import { useState } from 'preact/hooks';
 
-export default function ContactForm() {
+export default function ContactForm({ actionUrl }) {
   const [status, setStatus] = useState('');
 
   async function handleSubmit(e) {
@@ -16,16 +16,16 @@ export default function ContactForm() {
     });
 
     if (response.ok) {
-      setStatus('✅ Mensaje enviado con éxito.');
+      setStatus('Mensaje enviado con éxito.');
       form.reset();
     } else {
-      setStatus('❌ Hubo un error. Intentalo de nuevo.');
+      setStatus('Hubo un error. Intentalo de nuevo.');
     }
   }
 
   return (
     <form
-      action="https://formsubmit.co/tucorreo@dominio.com"
+      action={actionUrl}
       method="POST"
       onSubmit={handleSubmit}
       class="flex flex-col gap-y-4 max-w-2xl w-3xl mx-auto p-2 my-4 bg-gradient-to-r from-orange-500 to-red-700 rounded-lg shadow-lg"
