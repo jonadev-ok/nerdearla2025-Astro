@@ -1,7 +1,12 @@
 ---
 import LayoutBlog from "./LayoutBlog.astro";
 import HeaderBlog from "../components/LayoutComponents/HeaderBlog.astro";
+import ShareButtons from "../components/islands/ShareButtons";
+
 const { frontmatter } = Astro.props;
+
+const currentURL = Astro.site + Astro.url.pathname;
+const title = frontmatter.title;
 ---
 
 <LayoutBlog title={frontmatter.title}>
@@ -27,5 +32,6 @@ const { frontmatter } = Astro.props;
       </ul>
     </h2>
     <slot />
+    <ShareButtons url={currentURL} title={title} client:load />
   </article>
 </LayoutBlog>
