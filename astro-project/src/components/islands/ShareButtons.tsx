@@ -1,7 +1,6 @@
 /** @jsxImportSource preact */
 import { useState } from 'preact/hooks';
-import XspaceIcon from '../../icons/icons-socials/XspaceIcon.astro';
-import Xspace from "../../../public/logos/Xspace.svg"
+
 
 interface Props {
   url: string;
@@ -30,7 +29,7 @@ export default function ShareButtons({ url}: Props) {
         href={twitterURL}
         target="_blank"
         rel="noopener noreferrer"
-        class="px-3 py-2 flex justify-around items-center  bg-orange-500 text-white rounded w-40"
+        class="px-3 py-2 flex justify-around items-center  bg-blue-500 text-white rounded w-40"
       >
         <span>Compartir en</span> <img class="w-4" src="../../../public/logos/Xspace.svg"/>
       </a>
@@ -38,13 +37,13 @@ export default function ShareButtons({ url}: Props) {
         href={linkedinURL}
         target="_blank"
         rel="noopener noreferrer"
-        class="px-3 py-2 flex justify-around items-center  bg-orange-500 text-white rounded w-40"
+        class="px-3 py-2 flex justify-around items-center  bg-blue-500 text-white rounded w-40"
       >
         <span>Compartir en</span> <img class="w-4" src="../../../public/logos/Linkedin.svg"/>
       </a>
       <button
         onClick={copyLink}
-        class="px-3 py-2 flex justify-around items-center  bg-orange-500 text-white rounded w-40 cursor-pointer"
+        class="px-3 py-2 flex justify-around items-center  bg-blue-500 text-white rounded w-40 cursor-pointer"
       >
         <span>{copied ? "¡Copiado!" : "Copiar enlace"}</span>
       </button>
