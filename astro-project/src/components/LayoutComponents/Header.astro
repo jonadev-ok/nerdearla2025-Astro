@@ -31,12 +31,14 @@ const { pathname } = Astro.url;
 <header
   class="fixed top-0 bg-transparent flex w-full items-center justify-between sm:px-1 px-2"
 >
-  <div class="flex justify-center items-center md:w-50 sm:w-90 h-auto">
-    <img src={logo} class="m-4 w-7 h-auto" alt={logoAlt} />
-    <h2 class="my-3 text-orange-500 font-bold text-2xl">
-      {brand}<span class="text-white font-bold text-2xl"> {highlight}</span>
-    </h2>
-  </div>
+  <a href="/">
+    <div class="flex justify-center items-center md:w-50 sm:w-90 h-auto">
+      <img src={logo} class="m-4 w-7 h-auto" alt={logoAlt} />
+      <h2 class="my-3 text-orange-500 font-bold text-2xl">
+        {brand}<span class="text-white font-bold text-2xl"> {highlight}</span>
+      </h2>
+    </div>
+  </a>
 
   <nav class="w-100 hidden md:flex gap-3 justify-center">
     {

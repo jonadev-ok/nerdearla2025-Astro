@@ -1,0 +1,27 @@
+---
+import SectionContainer from "./SectionContainer.astro";
+import ProjectGallery from "../islands/ProjectGallery";
+import TitleContainer from "../ui/TitleContainer.astro";
+import ParagraphContainer from "../ui/paragraphContainer.astro";
+import Project from "../ui/Project.astro";
+
+const images = [
+  { src: "../../../public/projects/project01.webp", alt: "Proyecto 1" },
+  { src: "../../../public/projects/project02.webp", alt: "Proyecto 2" },
+  { src: "../../../public/projects/project03.webp", alt: "Proyecto 3" },
+];
+---
+
+<SectionContainer id="projects">
+  <TitleContainer
+    headingLevel="h2"
+    className="mb-5 flex justify-center items-center"
+    ><span class="text-orange-500"> <Project class="w-10 h-10" /> </span>
+    Nuestros Proyectos
+  </TitleContainer>
+  <ParagraphContainer>
+    Aqui vas a encontrar los proyectos de los clientes que confiaron en
+    nosotros.
+  </ParagraphContainer>
+  <ProjectGallery images={images} client:load />
+</SectionContainer>
