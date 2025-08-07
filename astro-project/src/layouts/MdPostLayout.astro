@@ -1,6 +1,5 @@
 ---
 import LayoutBlog from "./LayoutBlog.astro";
-import HeaderBlog from "../components/LayoutComponents/HeaderBlog.astro";
 import ShareButtons from "../components/islands/ShareButtons";
 
 const { frontmatter } = Astro.props;
@@ -10,7 +9,6 @@ const title = frontmatter.title;
 ---
 
 <LayoutBlog title={frontmatter.title}>
-  <HeaderBlog />
   <article class="w-full flex justify-center my-20 flex-col">
     <h1 class="text-3xl md:text-4xl text-white font-bold mb-6 text-center">
       {frontmatter.title}

@@ -2,6 +2,8 @@
 import LayoutBlog from "../../layouts/LayoutBlog.astro";
 import HeaderBlog from "../../components/LayoutComponents/HeaderBlog.astro";
 import BlogArticle from "../../components/blog/BlogArticle.astro";
+import TitleContainer from "../../components/ui/TitleContainer.astro";
+
 interface Post {
   url: string;
   frontmatter: {
@@ -44,11 +46,11 @@ const { posts } = Astro.props;
 <LayoutBlog pageTitle={tag}>
   <HeaderBlog />
   <section class="flex flex-col items-center w-full mb-20 py-25">
-    <h1 class="text-center text-5xl font-bold font-serif">
+    <TitleContainer>
       Entradas etiquetadas con {tag}
-    </h1>
+    </TitleContainer>
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-full px-5 py-3"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-full px-5 py-15"
     >
       {
         posts.map((post: any) => (

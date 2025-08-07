@@ -17,7 +17,7 @@ const { title, url, pubDate, tags, description } = Astro.props;
         tags.map((tag: any) => (
           <a
             href={`/tags/${tag}`}
-            class="bg-blue-600 text-white px-2 py-1 rounded-md hover:bg-blue-500 transition"
+            class="bg-orange-600 text-white px-2 py-1 rounded-md hover:bg-orange-500 transition"
           >
             {tag}
           </a>
@@ -27,7 +27,7 @@ const { title, url, pubDate, tags, description } = Astro.props;
     <p class="text-gray-300 line-clamp-3">
       {description}
     </p>
-    <a href={url} class="text-blue-500 hover:underline font-medium">
+    <a href={url} class="text-orange-500 hover:underline font-medium">
       Leer más →
     </a>
   </div>
