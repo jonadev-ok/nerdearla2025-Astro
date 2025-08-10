@@ -32,7 +32,7 @@ export default function ProjectGallery({ images }: Props) {
           onClick={() => setSelected(null)}
           class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-100"
         >
-          <img src={selected} alt="Vista ampliada" class="max-h-[90%] max-w-[90%]" />
+          <img src={selected} alt="Vista ampliada" class="max-h-[90%] max-w-[90%] rounded-4xl" />
         </div>
       )}
     </div>
