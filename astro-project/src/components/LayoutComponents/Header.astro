@@ -31,7 +31,7 @@ const { pathname } = Astro.url;
 ---
 
 <header
-  class={`${isFixed ? "fixed top-0" : "relative"} bg-transparent flex w-full items-center justify-between sm:px-1 px-2`}
+  class={`${isFixed ? "fixed top-0" : "absolute top-0"} bg-transparent flex w-full items-center justify-between sm:px-1 px-2`}
 >
   <a href="/">
     <div class="flex justify-center items-center md:w-50 sm:w-90 h-auto">
