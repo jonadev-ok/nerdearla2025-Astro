@@ -5,24 +5,22 @@ const { text, url, Authors } = Astro.props;
 <footer class="flex w-full h-20 justify-center items-center">
   <p class="text-center text-xl font-extralight text-gray-200">
     &copy; {new Date().getFullYear()}{" "}
-    {text?.[0] ?? ""}
-    <a
-      href={url?.[0] ?? "#"}
+    Astro devs. un sitio creado por <a
+      href="https://instagram.jona.dev_ok"
       target="_blank"
       rel="noopener noreferrer"
       class="text-blue-500 italic"
     >
-      {Authors?.[0] ?? "Autor 1"}
-    </a>{" "}
-    {text?.[1] ?? ""}
+      Jona Dev
+    </a> - Realizado con 🧡 para
     <a
-      href={url?.[1] ?? "#"}
+      href="https://nerdear.la"
       target="_blank"
       rel="noopener noreferrer"
       class="text-orange-500 font-bold"
     >
-      {Authors?.[1] ?? "Autor 2"}
-    </a>{" "}
-    {text?.[2] ?? ""}
+      Nerdearla
+    </a>
+    Todos los derechos reservados.
   </p>
 </footer>

@@ -8,15 +8,6 @@ const {
   description = "Bienvenidos a Astro devs | El futuro de las webs estaticas",
   favicon = "../../public/logos/AstrodevsFavicon.svg",
 } = Astro.props;
-const footerDate = {
-  text: [
-    "Astro devs. un sitio creado por ",
-    " - Realizado con 🧡 para",
-    "Todos los derechos reservados.",
-  ],
-  url: ["https://instagram.jona.dev_ok", "https://nerdear.la/es/"],
-  Authors: ["Jona Dev", "Nerdearla"],
-};
 ---
 
 <!doctype html>
@@ -33,7 +24,7 @@ const footerDate = {
     <HeaderLanding />
     <slot />
     <ButtonScroll client:load />
-    <Footer {...footerDate} />
+    <Footer />
   </body>
 </html>
 
