@@ -1,3 +1,6 @@
+
+<img width="1280" height="250" alt="Copia de githubport (1)" src="https://github.com/user-attachments/assets/9bd77c65-3693-4f1b-b186-f48fe8fcf57d" />
+
 <h2 align="center">Nerdearla 2025 - Workshop online: El futuro de las webs estaticas, Astro.</h2>
 <p align="center">Bienvenidos a este workshop en el que vamos a aprender juntos varias cosas sobre el presente actual de la web y hacia donde apunta el futuro de las webs estaticas. Hay varias cosas a tener en cuenta para llevar a cabo el proyecto que vamos a desarrollar.</p> 
 <h3>Que herramientas vamos a utilizar:</h3>
