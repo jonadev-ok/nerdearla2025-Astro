@@ -8,7 +8,7 @@
   <li> Deben tener previamente instalado en su equipo NodeJs y npm</li>
   <li> Un editor de codígo (preferentemente visual studio code)</li>
   <li> Un navegador web</li>
-  <li> Tener una cuenta en github (opcional)</li>
+  <li> Tener una cuenta en github y tener instalado git en su equipo(opcional)</li>
 </ul>
 
 <p align="center">En la siguiente lista les voy a detallar de manera sutil el cronograma del workshop para su consideración. Sección por sección de que temas vamos a hablar y al final les dejare documentación relevante para que puedan consultar. Empecemos con el cronograma.</h3>
