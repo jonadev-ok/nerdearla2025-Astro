@@ -11,7 +11,7 @@
   <li> Tener una cuenta en github (opcional)</li>
 </ul>
 
-<p align="center">En la siguiente lista les voy a detallar de manera sutil el cronograma del workshop para su consideración.</h3>
+<p align="center">En la siguiente lista les voy a detallar de manera sutil el cronograma del workshop para su consideración. Sección por sección de que temas vamos a hablar y al final les dejare documentación relevante para que puedan consultar. Empecemos con el cronograma.</h3>
 
 <h3>Cronograma del workshop:</h3>
 
