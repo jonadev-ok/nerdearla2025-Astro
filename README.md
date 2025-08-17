@@ -16,8 +16,8 @@
 <h3>Cronograma del workshop:</h3>
 
 <ul>
-  <li> Deben tener previamente instalado en su equipo NodeJs y npm</li>
-  <li> Un editor de codígo (preferentemente visual studio code)</li>
+  <li> Presentación</li>
+  <li> Introducción al presente de la web</li>
   <li> Un navegador web</li>
   <li> Tener una cuenta en github (opcional)</li>
 </ul>
