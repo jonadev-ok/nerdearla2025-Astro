@@ -18,6 +18,6 @@
 <ul>
   <li> Presentación.</li>
   <li> Introducción al presente de la web y problematica actual.</li>
-  <li> Un navegador web</li>
+  <li>¿Que es Astro? caracteristicas principales.</li>
   <li> Tener una cuenta en github (opcional)</li>
 </ul>
