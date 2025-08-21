@@ -10,23 +10,23 @@ const { title, description, link, btnText } = Astro.props;
 ---
 
 <article
-  class="bg-gradient-to-r from-orange-500 to-red-700 hover:from-red-700 hover:to-orange-500 transition-colors duration-300 ease-in-out hover:bg-neutral-700 rounded-2xl w-90 h-60 overflow-hidden shadow-lg flex flex-col mx-2"
+  class="bg-gradient-to-r from-orange-500 to-red-700 hover:from-red-700 hover:to-orange-500 transition-colors duration-300 ease-in-out hover:bg-neutral-700 rounded-2xl 2xl:w-120 w-90 h-60 overflow-hidden shadow-lg flex flex-col 2xl:mx-6 mx-2 2xl:p-2"
 >
   <h3
-    class="text-xl font-semibold text-white text-shadow-md text-shadow-gray-700 m-4"
+    class="2xl:text-2xl text-xl font-semibold text-white text-shadow-md text-shadow-gray-700 m-4"
   >
     {title}
   </h3>
 
   <p
-    class="text-center px-3 text-gray-600 dark:text-gray-300 hover:animate-pulse"
+    class="2xl:text-lg text-lg text-center px-3 text-gray-600 dark:text-gray-300 hover:animate-pulse"
   >
     {description}
   </p>
 
   <a
     href={link}
-    class="mt-auto text-primary mb-4 text-white hover:text-white hover:text-shadow-md hover:text-shadow-black"
+    class="2xl:text-lg text-lg mt-auto text-primary mb-4 text-white hover:text-white hover:text-shadow-md hover:text-shadow-black"
   >
     {btnText}
   </a>
