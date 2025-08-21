@@ -7,7 +7,6 @@
 <img width="1920" height="1080" alt="248shots_so" src="https://github.com/user-attachments/assets/af309524-0472-46c2-8bdc-29c3718c12b5" />
 <div align="center">
   
-
 </div>
 
 <h3>Que herramientas vamos a utilizar:</h3>
