@@ -4,6 +4,7 @@
 <h2 align="center">Nerdearla 2025 - Workshop online: El futuro de las webs estaticas, Astro.</h2>
 <p>Bienvenid@s. En este workshop en colaboracion con nerdearla desarrollamos una web con el <a href="https://astro.build/">framework Astro</a>. Este proyecto esta enfocado en demostrar porque Astro es una gran opción para crear webs estáticas. El proyecto se trata de una landing page con un blog integrado con articulos relacionados al producto principal. En este caso se trata de servicios digitales( desarrollo web, gestión y mantenimiento y marketing digital ).</p> 
 
+<img width="1738" height="746" alt="screen" src="https://github.com/user-attachments/assets/fd5e6b11-bafc-4240-b373-c2b8e9c1ae78" />
 
 <h3>Que herramientas vamos a utilizar:</h3>
 <ul>
