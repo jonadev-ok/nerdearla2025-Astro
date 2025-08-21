@@ -5,6 +5,13 @@
 <p>Bienvenidos y bienvenidas. En este workshop en colaboración con nerdearla desarrollamos una web con el <a href="https://astro.build/">framework Astro</a>. Este proyecto esta enfocado en demostrar porque Astro es una gran opción para crear webs estáticas. El proyecto se trata de una landing page con un blog integrado con articulos relacionados al producto principal.</p> 
 
 <img width="1920" height="1080" alt="248shots_so" src="https://github.com/user-attachments/assets/af309524-0472-46c2-8bdc-29c3718c12b5" />
+
+<div align="center">
+  
+![Astro Badge](https://img.shields.io/badge/Astro-FF3E00?logo=astro&logoColor=fff&style=flat)
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
+
+</div>
 <div align="center">
   
 </div>
