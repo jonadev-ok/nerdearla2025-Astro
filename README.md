@@ -12,9 +12,6 @@
 ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
 
 </div>
-<div align="center">
-  
-</div>
 
 <h3>Que herramientas vamos a utilizar:</h3>
 <ul>
