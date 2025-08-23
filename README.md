@@ -70,4 +70,16 @@
 
   ```
   </li>
+   <li>
+    <p>
+      Levantar el servidor de desarrollo: Esto abrirá el proyecto en localhost:4321 (puerto por defecto de Astro).
+    </p>
+
+   ```
+
+   npm run dev
+
+  ```
+
+  </li>
 </ol>
