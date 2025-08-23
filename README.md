@@ -109,4 +109,7 @@
   </li>
 </ol>
 
-<h3>Como colaborar en este proyecto.</h3>
+<h2>Como colaborar en este proyecto.</h2>
+<p>
+  ¡Hola! Me alegra que quieras sumarte a este proyecto. Se creó en el marco de Nerdearla 2025, pero la idea es que pueda seguir creciendo con la ayuda de la comunidad.
+</p>
