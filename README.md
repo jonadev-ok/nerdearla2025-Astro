@@ -17,4 +17,4 @@
 
 </div>
 
-<h3>Cuestiones a tener en cuenta:</h3>
+<h3>Instalación y ejecución:</h3>
