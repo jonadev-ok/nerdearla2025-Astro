@@ -18,3 +18,13 @@
 </div>
 
 <h3>Instalación y ejecución:</h3>
+<ol>
+  <li>Clonar el repositorio</li>
+  
+  ```
+
+  git clone https://github.com/jonadev-ok/nerdearla2025-Astro 
+
+  ```
+
+</ol>
