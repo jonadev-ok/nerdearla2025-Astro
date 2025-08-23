@@ -18,20 +18,3 @@
 </div>
 
 <h3>Cuestiones a tener en cuenta:</h3>
-<ul>
-  <li> Deben tener previamente instalado en su equipo NodeJs y npm.</li>
-  <li> Un editor de codígo (preferentemente visual studio code).</li>
-  <li> Un navegador web.</li>
-  <li> Tener una cuenta en github y tener instalado git en su equipo(opcional).</li>
-</ul>
-
-<p>En la siguiente lista les voy a detallar de manera sutil el cronograma del workshop para su consideración. Sección por sección de que temas vamos a hablar y al final les dejare documentación relevante para que puedan consultar. Empecemos con el cronograma.</h3>
-
-<h3>Cronograma del workshop:</h3>
-
-<ul>
-  <li> Presentación.</li>
-  <li> Introducción al presente de la web y problematica actual.</li>
-  <li> ¿Que es Astro? caracteristicas principales.</li>
-  <li> Desarrollo de proyecto con Astro desde cero</li>
-</ul>
