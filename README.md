@@ -116,3 +116,11 @@
 </p>
 
 <h3>Reportar un bug:</h3>
+
+<ol>
+  <li>
+    <p>
+      Abrí un issue.
+    </p>
+  </li>
+</ol>
