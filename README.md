@@ -123,4 +123,9 @@
       Abrí un issue.
     </p>
   </li>
+  <li>
+    <p>
+      Describí qué pasó y cómo reproducirlo.
+    </p>
+  </li>
 </ol>
