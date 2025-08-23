@@ -109,4 +109,4 @@
   </li>
 </ol>
 
-<h3>Como colaborar</h3>
+<h3>Como colaborar en este proyecto.</h3>
