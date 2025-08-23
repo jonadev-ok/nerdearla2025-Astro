@@ -82,4 +82,28 @@
   ```
 
   </li>
+  <li>
+    <p>
+      Build de producción: Si querés generar la versión optimizada para producción.
+    </p>
+
+   ```
+
+   npm run build
+
+   ```
+
+
+
+   <p>
+      Y para previsualizar el build.
+  </p>
+
+   ```
+
+   npm run preview
+
+   ```
+
+  </li>
 </ol>
