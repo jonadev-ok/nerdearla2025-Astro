@@ -17,7 +17,7 @@
 
 </div>
 
-<h3>Que herramientas vamos a utilizar:</h3>
+<h3>Cuestiones a tener en cuenta:</h3>
 <ul>
   <li> Deben tener previamente instalado en su equipo NodeJs y npm.</li>
   <li> Un editor de codígo (preferentemente visual studio code).</li>
