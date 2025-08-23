@@ -59,5 +59,15 @@
   cd astro-project 
 
   ```
+
+  <p>
+    Ahora que estas posicionado en la carpeta raiz pasemos a instalar las dependencias.
+  </p>
+
+   ```
+
+  npm install 
+
+  ```
   </li>
 </ol>
