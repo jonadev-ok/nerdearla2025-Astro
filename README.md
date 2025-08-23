@@ -20,7 +20,9 @@
 <h3>Instalación y ejecución:</h3>
 <ol>
   <li>
-    <p>Clonar el repositorio: Ejecuta en la terminal de tu equipo el siguiente comando. Esto va a clonar el repositorio original en tu equipo.</p>
+    <p>
+      Clonar el repositorio: Ejecuta en la terminal de tu equipo el siguiente comando. Esto va a clonar el repositorio original en tu equipo.
+    </p>
   
   ```
 
@@ -35,5 +37,23 @@
 
   ```
   </li>
-  <li>Instalar dependencias</li>
+  <li>
+    <p>
+      Instalar dependencias: para ejecutar este paso asegurate de tener instalado en tu equipo Node (version 18 o superior) y un gestor de paquetes como npm. 
+      Para asegurarte de esto ejecuta los siguientes comandos en tu terminal.
+    </p>
+
+   ```
+
+  node -v 
+
+  ```
+
+
+   ```
+
+  npm -v 
+
+  ```
+  </li>
 </ol>
