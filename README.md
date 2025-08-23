@@ -19,12 +19,21 @@
 
 <h3>Instalación y ejecución:</h3>
 <ol>
-  <li>Clonar el repositorio: Ejecuta en la terminal de tu equipo el siguiente comando. Esto va a clonar el repositorio original en tu equipo.</li>
+  <li>
+    <p>Clonar el repositorio: Ejecuta en la terminal de tu equipo el siguiente comando. Esto va a clonar el repositorio original en tu equipo.</p>
   
   ```
 
   git clone https://github.com/jonadev-ok/nerdearla2025-Astro 
 
   ```
+  <p>Antes de pasar al siguiente paso asegurate de posicionarte en la carpeta raiz del repositorio con el siguiente comando</p>
+
+   ```
+
+  cd astro-project 
+
+  ```
+  </li>
   <li>Instalar dependencias</li>
 </ol>
