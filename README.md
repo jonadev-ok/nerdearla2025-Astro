@@ -29,13 +29,7 @@
   git clone https://github.com/jonadev-ok/nerdearla2025-Astro 
 
   ```
-  <p>Antes de ir al siguiente paso asegurate de posicionarte en la carpeta raiz del repositorio con el siguiente comando</p>
-
-   ```
-
-  cd astro-project 
-
-  ```
+  
   </li>
   <li>
     <p>
@@ -53,6 +47,16 @@
    ```
 
   npm -v 
+
+  ```
+
+  <p>
+    Antes de instalar las dependencias asegurate de posicionarte en la carpeta raiz del repositorio con el siguiente comando.
+  </p>
+
+   ```
+
+  cd astro-project 
 
   ```
   </li>
