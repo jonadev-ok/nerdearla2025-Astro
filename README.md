@@ -176,4 +176,9 @@
 
   ```
   </li>
+  <li>
+    <p>
+      Crear una rama para tu cambio:
+    </p>
+  </li>
 </ol>
