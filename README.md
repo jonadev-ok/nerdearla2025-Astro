@@ -169,5 +169,11 @@
     <p>
       Agregar el remoto original (upstream):
     </p>
+
+  ```
+
+    git remote add upstream https://github.com/jonadev-ok/nerdearla2025-Astro 
+
+  ```
   </li>
 </ol>
