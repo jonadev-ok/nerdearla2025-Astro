@@ -129,3 +129,18 @@
     </p>
   </li>
 </ol>
+
+<h3>Proponer una mejora:</h3>
+
+<ol>
+  <li>
+    <p>
+      Abrí un issue.
+    </p>
+  </li>
+  <li>
+    <p>
+      Describí qué pasó y cómo reproducirlo.
+    </p>
+  </li>
+</ol>
