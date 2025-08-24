@@ -146,3 +146,16 @@
 </ol>
 
 <h3>Enviar un Pull Request (PR):</h3>
+
+<ol>
+  <li>
+    <p>
+      Hacer una bifurcación del repo. En GitHub, presioná el botón Fork (arriba a la derecha).
+    </p>
+  </li>
+  <li>
+    <p>
+      Contá la idea y, si podés, agregá ejemplos.
+    </p>
+  </li>
+</ol>
