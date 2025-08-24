@@ -155,7 +155,7 @@
   </li>
   <li>
     <p>
-      Contá la idea y, si podés, agregá ejemplos.
+      Clonar tu fork.
     </p>
   </li>
 </ol>
