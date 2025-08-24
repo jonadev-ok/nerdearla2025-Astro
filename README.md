@@ -158,11 +158,11 @@
       Clonar tu fork.
     </p>
 
-    ```
+  ```
 
     git clone https://github.com/TU-NOMBRE-DE-USUARIO/nerdearla2025-Astro 
 
-    ```
+  ```
     
   </li>
 </ol>
