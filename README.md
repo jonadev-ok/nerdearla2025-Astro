@@ -180,5 +180,11 @@
     <p>
       Crear una rama para tu cambio:
     </p>
+
+  ```
+
+    git checkout -b feature/MI-CAMBIO
+
+  ```
   </li>
 </ol>
