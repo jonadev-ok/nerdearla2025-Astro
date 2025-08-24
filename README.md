@@ -135,12 +135,12 @@
 <ol>
   <li>
     <p>
-      Abrí un issue.
+      Abrí un issue con la etiqueta enhancement.
     </p>
   </li>
   <li>
     <p>
-      Describí qué pasó y cómo reproducirlo.
+      Contá la idea y, si podés, agregá ejemplos.
     </p>
   </li>
 </ol>
