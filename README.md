@@ -144,3 +144,5 @@
     </p>
   </li>
 </ol>
+
+<h3>Enviar un Pull Request (PR):</h3>
