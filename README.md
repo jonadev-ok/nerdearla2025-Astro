@@ -187,4 +187,21 @@
 
   ```
   </li>
+  <li>
+    <p>
+      Hacer tus cambios:
+    </p>
+    <ul>
+      <li>
+        <p>
+          Asegurate de que el proyecto corra bien (npm run dev).
+        </p>
+      </li>
+      <li>
+        <p>
+          Escribí commits descriptivos:
+        </p>
+      </li>
+    </ul>
+  </li>
 </ol>
