@@ -165,4 +165,9 @@
   ```
     
   </li>
+  <li>
+    <p>
+      Agregar el remoto original (upstream):
+    </p>
+  </li>
 </ol>
