@@ -67,7 +67,13 @@
   ```
     
   </li>
+  <li>
+    <p>
+      Abrí http://localhost:4321 en tu navegador.
+    </p>
+  </li>
 </ol>
+
 
 
 
