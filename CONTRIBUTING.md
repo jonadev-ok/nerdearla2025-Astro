@@ -31,4 +31,17 @@
   ```
     
   </li>
+  <li>
+    <p>
+      Ubicate en la carpeta raiz del proyecto  con el siguiente comando.
+    </p>
+
+  ```
+
+    cd astro-project
+
+  ```
+    
+  </li>
 </ol>
+
