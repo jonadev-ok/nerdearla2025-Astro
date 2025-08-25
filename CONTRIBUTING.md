@@ -76,5 +76,28 @@
 
 <h3>Flujo de contribución</h3>
 
+<ol>
+  <li>
+    <p>
+      Hacé Fork del repositorio.
+    </p>
+  </li>
+  <li>
+    <p>
+      Cloná tu fork en local.
+    </p>
+  </li>
+  <li>
+    <p>
+      Agregá el remoto original:
+    </p>
+
+  ```
+
+  git remote add upstream https://github.com/jonadev-ok/nerdearla2025-Astro.git
+
+  ```
+  </li>
+</ol>
 
 
