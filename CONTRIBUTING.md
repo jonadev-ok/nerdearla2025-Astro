@@ -12,3 +12,17 @@
 <p>
   Antes de contribuir, asegurate de poder levantar el proyecto en tu máquina:
 </p>
+
+  ´´´
+  
+      # 1. Clonar tu fork
+      git clone https://github.com/TU-USUARIO/nerdearla2025-Astro
+      cd REPO
+
+    # 2. Instalar dependencias
+    npm install   # o pnpm install
+
+    # 3. Levantar el servidor de desarrollo
+    npm run dev
+
+´´´
