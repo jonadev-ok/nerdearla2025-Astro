@@ -55,6 +55,19 @@
   ```
     
   </li>
+  <li>
+    <p>
+      Levantar el servidor en local.
+    </p>
+
+  ```
+
+    npm run dev
+
+  ```
+    
+  </li>
 </ol>
+
 
 
