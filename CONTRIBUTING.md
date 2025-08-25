@@ -98,6 +98,18 @@
 
   ```
   </li>
+  <li>
+    <p>
+      Agregá una rama descriptiva:
+    </p>
+
+  ```
+
+  git checkout -b feature/mi-cambio
+
+  ```
+  </li>
 </ol>
+
 
 
