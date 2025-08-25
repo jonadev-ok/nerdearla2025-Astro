@@ -13,16 +13,22 @@
   Antes de contribuir, asegurate de poder levantar el proyecto en tu máquina:
 </p>
 
-  ´´´
-  
-      # 1. Clonar tu fork
-      git clone https://github.com/TU-USUARIO/nerdearla2025-Astro
-      cd REPO
+ <ol>
+  <li>
+    <p>
+      Hacer una bifurcación del repo. En GitHub, presioná el botón Fork (arriba a la derecha).
+    </p>
+  </li>
+  <li>
+    <p>
+      Clonar tu fork.
+    </p>
 
-    # 2. Instalar dependencias
-    npm install   # o pnpm install
+  ```
 
-    # 3. Levantar el servidor de desarrollo
-    npm run dev
+    git clone https://github.com/TU-NOMBRE-DE-USUARIO/nerdearla2025-Astro.git 
 
-´´´
+  ```
+    
+  </li>
+</ol>
