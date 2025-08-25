@@ -43,5 +43,18 @@
   ```
     
   </li>
+  <li>
+    <p>
+      Instalar las dependencias.
+    </p>
+
+  ```
+
+    npm install
+
+  ```
+    
+  </li>
 </ol>
+
 
