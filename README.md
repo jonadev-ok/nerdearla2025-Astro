@@ -27,7 +27,7 @@
   
   ```
 
-  git clone https://github.com/jonadev-ok/nerdearla2025-Astro 
+  git clone https://github.com/jonadev-ok/nerdearla2025-Astro.git 
 
   ```
   
@@ -160,7 +160,7 @@
 
   ```
 
-    git clone https://github.com/TU-NOMBRE-DE-USUARIO/nerdearla2025-Astro 
+    git clone https://github.com/TU-NOMBRE-DE-USUARIO/nerdearla2025-Astro.git 
 
   ```
     
