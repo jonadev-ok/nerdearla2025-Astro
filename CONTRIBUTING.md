@@ -74,6 +74,7 @@
   </li>
 </ol>
 
+<h3>Flujo de contribución</h3>
 
 
 
