@@ -166,7 +166,13 @@
       Descripción clara del problema.
     </p>
   </li>
+  <li>
+    <p>
+      Pasos para reproducirlo.
+    </p>
+  </li>
 </ul>
+
 
 
 
