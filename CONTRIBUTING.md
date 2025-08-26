@@ -157,6 +157,17 @@
   Reportar bugs
 </h3>
 
+<p>
+  Si encontrás un error, creá un issue con:
+</p>
+<ul>
+  <li>
+    <p>
+      Descripción clara del problema.
+    </p>
+  </li>
+</ul>
+
 
 
 
