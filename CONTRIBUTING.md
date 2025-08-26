@@ -171,7 +171,13 @@
       Pasos para reproducirlo.
     </p>
   </li>
+  <li>
+    <p>
+      Comportamiento esperado.
+    </p>
+  </li>
 </ul>
+
 
 
 
