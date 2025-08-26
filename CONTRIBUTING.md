@@ -184,7 +184,7 @@
 </ul>
 
 <h3>
-  Reportar bugs
+  Proponer mejoras
 </h3>
 
 <p>
@@ -212,6 +212,7 @@
     </p>
   </li>
 </ul>
+
 
 
 
