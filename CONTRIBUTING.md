@@ -208,6 +208,32 @@
   </li>
 </ul>
 
+<h3>
+  Pull Requests
+</h3>
+
+<p>
+  Cuando abras un PR, incluí:
+</p>
+<ul>
+  <li>
+    <p>
+      Abrí un issue con la etiqueta enhancement.
+    </p>
+  </li>
+  <li>
+    <p>
+      Explicá qué mejora proponés y por qué.
+    </p>
+  </li>
+  <li>
+    <p>
+      Si es algo grande, mejor discutirlo primero en un issue antes de abrir un PR.
+    </p>
+  </li>
+</ul>
+
+
 
 
 
