@@ -121,7 +121,22 @@
 
   ```
   </li>
+  <li>
+    <p>
+      Sincronizá con el repo original antes de subir:
+    </p>
+
+  ```
+
+  git fetch upstream
+  git checkout main
+  git merge upstream/main   # o git rebase upstream/main
+
+
+  ```
+  </li>
 </ol>
+
 
 
 
