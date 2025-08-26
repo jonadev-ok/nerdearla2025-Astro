@@ -183,6 +183,37 @@
   </li>
 </ul>
 
+<h3>
+  Reportar bugs
+</h3>
+
+<p>
+  Si encontrás un error, creá un issue con:
+</p>
+<ul>
+  <li>
+    <p>
+      Descripción clara del problema.
+    </p>
+  </li>
+  <li>
+    <p>
+      Pasos para reproducirlo.
+    </p>
+  </li>
+  <li>
+    <p>
+      Comportamiento esperado.
+    </p>
+  </li>
+  <li>
+    <p>
+      Capturas de pantalla (si aplica).
+    </p>
+  </li>
+</ul>
+
+
 
 
 
