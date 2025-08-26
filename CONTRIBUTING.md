@@ -198,7 +198,7 @@
   </li>
   <li>
     <p>
-      Pasos para reproducirlo.
+      Explicá qué mejora proponés y por qué.
     </p>
   </li>
   <li>
@@ -212,6 +212,7 @@
     </p>
   </li>
 </ul>
+
 
 
 
