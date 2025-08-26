@@ -233,6 +233,29 @@
   </li>
 </ul>
 
+<h3>
+  Checklist antes de enviar tu PR:
+</h3>
+
+<ul>
+  <li>
+    <p>
+      Una descripción clara de qué cambiaste.
+    </p>
+  </li>
+  <li>
+    <p>
+      El issue relacionado (ej: Closes #12).
+    </p>
+  </li>
+  <li>
+    <p>
+      Capturas comparando antes y después (si aplica).
+    </p>
+  </li>
+</ul>
+
+
 
 
 
