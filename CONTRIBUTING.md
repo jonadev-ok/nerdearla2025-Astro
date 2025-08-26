@@ -109,7 +109,20 @@
 
   ```
   </li>
+  <li>
+    <p>
+      Hacé tus cambios y commiteá:
+    </p>
+
+  ```
+
+  git add .
+  git commit -m "fix: corrige bug en navbar"
+
+  ```
+  </li>
 </ol>
+
 
 
 
