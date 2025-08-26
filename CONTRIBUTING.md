@@ -193,7 +193,7 @@
 <ul>
   <li>
     <p>
-      Descripción clara del problema.
+      Abrí un issue con la etiqueta enhancement.
     </p>
   </li>
   <li>
@@ -212,6 +212,7 @@
     </p>
   </li>
 </ul>
+
 
 
 
