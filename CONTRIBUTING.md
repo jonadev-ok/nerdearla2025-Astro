@@ -203,15 +203,11 @@
   </li>
   <li>
     <p>
-      Comportamiento esperado.
-    </p>
-  </li>
-  <li>
-    <p>
-      Capturas de pantalla (si aplica).
+      Si es algo grande, mejor discutirlo primero en un issue antes de abrir un PR.
     </p>
   </li>
 </ul>
+
 
 
 
