@@ -146,7 +146,13 @@
 
   ```
   </li>
+  <li>
+    <p>
+      Abrí un Pull Request desde tu fork hacia este repo.
+    </p>
+  </li>
 </ol>
+
 
 
 
