@@ -176,7 +176,13 @@
       Comportamiento esperado.
     </p>
   </li>
+  <li>
+    <p>
+      Capturas de pantalla (si aplica).
+    </p>
+  </li>
 </ul>
+
 
 
 
