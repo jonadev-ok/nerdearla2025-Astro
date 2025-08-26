@@ -259,6 +259,11 @@
   Gracias
 </h3>
 
+<p>
+  Toda contribución (grande o pequeña) suma muchísimo.
+  Si este proyecto te resulta útil, considerá dejar una ⭐ en el repo.
+</p>
+
 
 
 
