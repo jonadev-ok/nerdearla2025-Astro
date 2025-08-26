@@ -240,20 +240,21 @@
 <ul>
   <li>
     <p>
-      Una descripción clara de qué cambiaste.
+      El proyecto corre sin errores (npm run dev).
     </p>
   </li>
   <li>
     <p>
-      El issue relacionado (ej: Closes #12).
+      Los cambios siguen el estilo del código.
     </p>
   </li>
   <li>
     <p>
-      Capturas comparando antes y después (si aplica).
+      La documentación se actualizó si fue necesario.
     </p>
   </li>
 </ul>
+
 
 
 
