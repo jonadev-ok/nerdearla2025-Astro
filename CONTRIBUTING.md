@@ -218,12 +218,12 @@
 <ul>
   <li>
     <p>
-      Abrí un issue con la etiqueta enhancement.
+      Una descripción clara de qué cambiaste.
     </p>
   </li>
   <li>
     <p>
-      Explicá qué mejora proponés y por qué.
+      El issue relacionado (ej: Closes #12).
     </p>
   </li>
   <li>
@@ -232,6 +232,7 @@
     </p>
   </li>
 </ul>
+
 
 
 
