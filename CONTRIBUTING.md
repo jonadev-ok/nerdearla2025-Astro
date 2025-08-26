@@ -228,10 +228,11 @@
   </li>
   <li>
     <p>
-      Si es algo grande, mejor discutirlo primero en un issue antes de abrir un PR.
+      Capturas comparando antes y después (si aplica).
     </p>
   </li>
 </ul>
+
 
 
 
