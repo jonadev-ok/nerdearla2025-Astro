@@ -188,7 +188,7 @@
 </h3>
 
 <p>
-  Si encontrás un error, creá un issue con:
+  Las nuevas ideas también son bienvenidas. Para sugerir algo:
 </p>
 <ul>
   <li>
@@ -212,6 +212,7 @@
     </p>
   </li>
 </ul>
+
 
 
 
