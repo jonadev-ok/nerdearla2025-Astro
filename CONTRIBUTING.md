@@ -135,7 +135,19 @@
 
   ```
   </li>
+  <li>
+    <p>
+      Subí tu rama a tu fork:
+    </p>
+
+  ```
+
+  git push -u origin feature/mi-cambio
+
+  ```
+  </li>
 </ol>
+
 
 
 
