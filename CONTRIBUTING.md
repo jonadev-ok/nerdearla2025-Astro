@@ -153,6 +153,9 @@
   </li>
 </ol>
 
+<h3>
+  Reportar bugs
+</h3>
 
 
 
