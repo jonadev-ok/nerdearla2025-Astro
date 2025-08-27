@@ -11,6 +11,7 @@ interface ModalProps {
   title: string;
   message: string;
   delay?: number; 
+  socials?: SocialLink[];
 }
 
 export default function Modal({
