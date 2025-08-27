@@ -60,5 +60,19 @@
   </li>
 </ul>
 
+<h3>Cómo actuar</h3>
+
+<ul>
+  <li>
+    <p>
+      Si ves un problema de conducta, podés reportarlo creando un issue privado o contactando al mantenedor del repo.
+    </p>
+  </li>
+  <li>
+    <p>
+      Las faltas graves pueden llevar a la eliminación de comentarios, issues, PRs o incluso la expulsión del proyecto.
+    </p>
+  </li>
+</ul>
 
 
