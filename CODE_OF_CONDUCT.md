@@ -5,3 +5,7 @@
   Este proyecto se creó en el marco de Nerdearla 2025, y busca ser un espacio abierto, inclusivo y respetuoso para toda persona que quiera     aprender, colaborar y compartir.
 </p>
 
+<h3>Principios básicos</h3>
+
+
+
