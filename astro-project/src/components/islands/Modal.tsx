@@ -10,8 +10,7 @@ interface SocialLink {
 interface ModalProps {
   title: string;
   message: string;
-  delay?: number; // tiempo en ms antes de mostrarlo
-  socials?: SocialLink[];
+  delay?: number; 
 }
 
 export default function Modal({
