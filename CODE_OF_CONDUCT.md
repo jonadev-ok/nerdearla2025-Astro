@@ -35,4 +35,30 @@
   </li>
 </ul>
 
+<h3>No se tolera</h3>
+
+<ul>
+  <li>
+    <p>
+      Lenguaje ofensivo o discriminatorio.
+    </p>
+  </li>
+  <li>
+    <p>
+      Ataques personales o descalificaciones.
+    </p>
+  </li>
+  <li>
+    <p>
+      Conductas de acoso o intimidación.
+    </p>
+  </li>
+  <li>
+    <p>
+      Spam o autopromoción excesiva.
+    </p>
+  </li>
+</ul>
+
+
 
