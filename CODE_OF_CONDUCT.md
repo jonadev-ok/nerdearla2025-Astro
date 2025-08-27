@@ -7,5 +7,32 @@
 
 <h3>Principios básicos</h3>
 
+<ul>
+  <li>
+    <p>
+      Sé respetuoso/a con las demás personas.
+    </p>
+  </li>
+  <li>
+    <p>
+      Escuchá y valorá distintas opiniones.
+    </p>
+  </li>
+  <li>
+    <p>
+      Aceptá críticas constructivas con buena onda.
+    </p>
+  </li>
+  <li>
+    <p>
+      Celebrá la diversidad y fomentá la inclusión.
+    </p>
+  </li>
+  <li>
+    <p>
+      Ayudá a que este proyecto sea un lugar seguro y amigable.
+    </p>
+  </li>
+</ul>
 
 
