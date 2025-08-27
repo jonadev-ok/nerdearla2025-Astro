@@ -75,4 +75,27 @@
   </li>
 </ul>
 
+<h3Nuestro compromiso</h3>
+
+<p>Queremos que este proyecto sea un espacio donde todas las personas puedan:</p>
+
+<ul>
+  <li>
+    <p>
+      Aprender y mejorar sus habilidades.
+    </p>
+  </li>
+  <li>
+    <p>
+      Colaborar sin miedo a equivocarse.
+    </p>
+  </li>
+  <li>
+    <p>
+      Disfrutar de contribuir a una iniciativa open source.
+    </p>
+  </li>
+</ul>
+
+
 
