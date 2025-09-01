@@ -114,7 +114,7 @@
 
 ¡Este proyecto es open source y las contribuciones son súper bienvenidas!  
 Si querés aportar, revisá primero nuestra guía:  
- [Guía de Contribución](CONTRIBUTING.md)
+ [Guía de Contribución](CONTRIBUTTING.md)
 
 También tenemos un código de conducta para asegurar que la comunidad sea inclusiva y respetuosa:  
  [Código de Conducta](CODE_OF_CONDUCT.md)
