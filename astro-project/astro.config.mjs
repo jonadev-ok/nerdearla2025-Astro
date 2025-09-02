@@ -14,5 +14,6 @@ export default defineConfig({
   },
 
   integrations: [preact()],
-  adapter: vercel()
+  output: 'server',
+  adapter: vercel(),
 });
