@@ -18,6 +18,7 @@
 
 </div>
 
+<h2>Link al proyecto: <a href="https://astro-devs.vercel.app/">astro-devs</a></h2>
 <h2>Instalación y ejecución.</h2>
 <p>Estos son los pasos para levantar el proyecto en tu equipo:</p>
 <ol>
