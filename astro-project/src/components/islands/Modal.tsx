@@ -1,24 +1,20 @@
 /** @jsxImportSource preact */
 import { useEffect, useState } from "preact/hooks";
 
-interface SocialLink {
-  name: string;
-  href: string;
-  icon: string; // ruta al svg o png
-}
-
 interface ModalProps {
   title: string;
   message: string;
-  delay?: number; 
-  socials?: SocialLink[];
+  delay?: number;     // tiempo antes de mostrarlo
+  downloadUrl: string; // ruta al archivo PDF
+  buttonText?: string;
 }
 
 export default function Modal({
   title,
   message,
   delay = 5000,
-  socials = [],
+  downloadUrl,
+  buttonText = "Descargar guía",
 }: ModalProps) {
   const [open, setOpen] = useState(false);
 
@@ -43,24 +39,14 @@ export default function Modal({
         <h2 class="text-lg font-semibold mb-4">{title}</h2>
         <p class="text-gray-600 mb-4">{message}</p>
 
-        {socials.length > 0 && (
-          <div class="flex justify-center gap-4">
-            {socials.map((social) => (
-              <a
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={social.name}
-              >
-                <img
-                  src={social.icon}
-                  alt={social.name}
-                  class="w-8 h-8 hover:opacity-75 transition"
-                />
-              </a>
-            ))}
-          </div>
-        )}
+        {/* Botón de descarga */}
+        <a
+          href={downloadUrl}
+          download
+          class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
+        >
+          {buttonText}
+        </a>
       </div>
     </div>
   );
