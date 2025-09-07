@@ -19,9 +19,14 @@ interface Props {
   posts: Post[];
 }
 export async function getStaticPaths(): Promise<any> {
-  const allPosts = Object.values(
+  const allPosts = Object.entries(
     import.meta.glob("../content/*.md", { eager: true })
-  ) as Post[];
+  ).map(([path, post]: any) => {
+    return {
+      ...post,
+      url: "/posts/" + path.split("/").pop()?.replace(".md", ""),
+    };
+  }) as Post[];
 
   const filterDate = allPosts.sort(
     (a, b) =>
