@@ -19,7 +19,7 @@ interface Props {
   posts: Post[];
 }
 export async function getStaticPaths(): Promise<any> {
-  const allPosts = await Astro.glob("../content/*.md");
+  const allPosts = await Astro.glob("/content/*.md");
   const filterDate = allPosts.sort(
     (a, b) =>
       new Date(b.frontmatter.pubDate).getTime() -
