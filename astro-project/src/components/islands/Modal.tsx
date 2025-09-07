@@ -2,8 +2,8 @@
 import { useEffect, useState } from "preact/hooks";
 
 interface ModalProps {
-  title: string;
-  message: string;
+  title: string;      // titulo
+  message: string;    // mensaje
   delay?: number;     // tiempo antes de mostrarlo
   downloadUrl: string; // ruta al archivo PDF
   buttonText?: string;

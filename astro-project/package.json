@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@astrojs/preact": "^4.1.0",
-    "@astrojs/vercel": "^8.2.7",
+    "@astrojs/vercel": "^8.0.4",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.11.1",
     "preact": "^10.26.9",
