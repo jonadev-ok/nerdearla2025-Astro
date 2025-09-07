@@ -6,7 +6,7 @@ interface ModalProps {
   message: string;    // mensaje
   delay?: number;     // tiempo antes de mostrarlo
   downloadUrl: string; // ruta al archivo PDF
-  buttonText?: string;
+  buttonText?: string; // texto de boton
 }
 
 export default function Modal({
