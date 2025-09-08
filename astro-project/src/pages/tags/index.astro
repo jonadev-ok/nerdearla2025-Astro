@@ -1,10 +1,15 @@
 ---
 export const prerender = true;
 import LayoutBlog from "../../layouts/LayoutBlog.astro";
-const allPosts = await Astro.glob("../content/*.md");
+
+const allPosts = await Promise.all(
+  Object.values(import.meta.glob("../content/*.md", { eager: true }))
+);
+
 const tags = [
   ...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat()),
 ];
+
 const pageTitle = "Índice de etiquetas";
 ---
 
@@ -19,7 +24,9 @@ const pageTitle = "Índice de etiquetas";
     }
   </div>
 </LayoutBlog>
-<!-- <style>
+
+<!--
+<style>
   a {
     color: #c74905;
   }
@@ -37,4 +44,5 @@ const pageTitle = "Índice de etiquetas";
     font-size: 1.15em;
     background-color: #f8fcfd;
   }
-</style> -->
+</style>
+-->

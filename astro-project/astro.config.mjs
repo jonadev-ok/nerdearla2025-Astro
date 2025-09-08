@@ -9,9 +9,9 @@ import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "localhost:4321",
+  site: "http://localhost:4321",
   base: "/",
-  output: "server",
+  output: "static",
   adapter: vercel(),
   vite: {
     plugins: [tailwindcss()],

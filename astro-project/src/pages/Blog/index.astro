@@ -7,12 +7,17 @@ const message = {
   secondMessage: "Volvés a nuestro blog, revisa nuestras novedades!",
 };
 
-const posts = (await Astro.glob("../content/*.md")).map((post) => ({
+const rawPosts = await Promise.all(
+  Object.values(import.meta.glob("../content/*.md", { eager: true }))
+);
+
+const posts = rawPosts.map((post: any) => ({
   title: post.frontmatter.title,
   url: post.url,
 }));
-const allPosts = (await Astro.glob("../content/*.md")).sort(
-  (a, b) =>
+
+const allPosts = [...rawPosts].sort(
+  (a: any, b: any) =>
     new Date(b.frontmatter.pubDate).getTime() -
     new Date(a.frontmatter.pubDate).getTime()
 );
@@ -24,7 +29,6 @@ const allPosts = (await Astro.glob("../content/*.md")).sort(
       title="Bienvenidos a "
       span="Nuestro Blog"
       description="Aqui vas a encontrar diversos articulos que te ayudaran a entender que es lo que necesita tu negocio para crecer"
-      ,
       url="#articles"
       cta="Explora nuestros articulos"
       bgImage="/backgrounds/bg-galaxy.webp"
