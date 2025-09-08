@@ -9,7 +9,7 @@ import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-devs-kqescg16i-jonadevs-projects.vercel.app",
+  site: "https://astro-devs-jr5cw6s5m-jonadevs-projects.vercel.app",
   base: "/",
   output: "server",
   adapter: vercel(),
