@@ -10,7 +10,7 @@ interface Props {
 export default function ShareButtons({ url}: Props) {
   const [copied, setCopied] = useState(false);
 
-  const twitterURL = `https://x.com/intent/post?text=${encodeURIComponent(url)}}`;
+  const twitterURL = `https://x.com/intent/post?url=${encodeURIComponent(url)}}`;
   const linkedinURL = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
 
   const copyLink = async () => {
