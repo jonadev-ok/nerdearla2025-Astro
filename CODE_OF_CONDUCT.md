@@ -20,7 +20,7 @@
   </li>
   <li>
     <p>
-      Aceptá críticas constructivas con buena onda.
+      Aceptá críticas constructivas con buena predisposición.
     </p>
   </li>
   <li>
@@ -96,6 +96,7 @@
     </p>
   </li>
 </ul>
+
 
 
 
