@@ -42,6 +42,7 @@ export default function Modal({
         {/* Botón de descarga */}
         <a
           href={downloadUrl}
+          target="_blank"
           download
           class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
         >
