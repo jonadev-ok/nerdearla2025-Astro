@@ -1,6 +1,7 @@
 ---
 import Hero from "../components/sections/Hero.astro";
 import LayoutBase from "../layouts/LayoutBase.astro";
+import Modal from "../components/islands/Modal";
 import Services from "../components/sections/Services.astro";
 import Projects from "../components/sections/Projects.astro";
 
@@ -12,6 +13,14 @@ const message = {
 
 <LayoutBase>
   <main role="main">
+    <Modal
+      client:load
+      title="📘 Descargá nuestra guía gratuita"
+      message="Llevate la guía completa de 23 proyectos reales para aplicar tus conocimientos."
+      delay={4000}
+      downloadUrl="https://jonadev.gumroad.com/l/23proyectos?layout=profile"
+      buttonText="Descargar ahora"
+    />
     <Hero
       title="Bienvenidos a "
       span="Astro Devs"
