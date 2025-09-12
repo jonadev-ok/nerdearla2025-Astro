@@ -24,7 +24,7 @@ export async function getStaticPaths(): Promise<any> {
   ).map(([path, post]: any) => {
     return {
       ...post,
-      url: "/posts/" + path.split("/").pop()?.replace(".md", ""),
+      url: "/content/" + path.split("/").pop()?.replace(".md", ""),
     };
   }) as Post[];
 
