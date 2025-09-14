@@ -75,7 +75,7 @@
   </li>
 </ul>
 
-<h3Nuestro compromiso</h3>
+<h3>Nuestro compromiso</h3>
 
 <p>Queremos que este proyecto sea un espacio donde todas las personas puedan:</p>
 
@@ -96,6 +96,7 @@
     </p>
   </li>
 </ul>
+
 
 
 
