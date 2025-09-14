@@ -75,7 +75,7 @@
   </li>
    <li>
     <p>
-      Levantar el servidor de desarrollo: Esto abrirá el proyecto en localhost:4321 (puerto por defecto de Astro).
+      Levantar el servidor de desarrollo: Esto abrirá el proyecto de manera local en localhost:4321 (puerto por defecto de Astro).
     </p>
 
    ```
