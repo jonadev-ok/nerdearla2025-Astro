@@ -121,5 +121,5 @@ También tenemos un código de conducta para asegurar que la comunidad sea inclu
  [Código de Conducta](CODE_OF_CONDUCT.md)
 
 
-<h2>Gracias!!!</h2>
+<h2>Gracias a todos y a todas!!!</h2>
 
