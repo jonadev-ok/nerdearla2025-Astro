@@ -27,8 +27,7 @@ export default function Modal({
 
   return (
     <div class="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
-      <div class="bg-black p-6 rounded-2xl shadow-lg max-w-sm text-center relative">
-        {/* Botón cerrar */}
+      <div class="bg-black p-6 rounded-2xl shadow-lg sm:w-sm xl:w-5xl xl:h-[250px] 2xl:w-3xl  text-center relative">
         <button
           class="absolute top-2 right-2 text-white hover:text-red-500 cursor-pointer"
           onClick={() => setOpen(false)}
@@ -36,10 +35,8 @@ export default function Modal({
           ✕
         </button>
 
-        <h2 class="text-lg font-semibold mb-4 text-orange-500">{title}</h2>
-        <p class=" mb-4 text-white">{message}</p>
-
-        {/* Botón de descarga */}
+        <h2 class="text-2xl font-semibold mb-4 text-orange-500">{title}</h2>
+        <p class="text-lg mb-4 text-white">{message}</p>
         <a
           href={downloadUrl}
           target="_blank"
