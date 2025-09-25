@@ -36,7 +36,7 @@
   </li>
   <li>
     <p>
-      Instalar dependencias: para ejecutar este paso asegurate de tener instalado en tu equipo Node (version 18 o superior) y un gestor de paquetes como npm. 
+      Instalar dependencias: para ejecutar este paso asegurate de tener instalado en tu equipo Node (version 18 o superior) y un gestor de paquetes como pnpm. 
       Para asegurarte de esto ejecuta los siguientes comandos en tu terminal.
     </p>
 
@@ -49,7 +49,7 @@
 
    ```
 
-  npm -v 
+  pnpm -v 
 
   ```
 
@@ -80,7 +80,7 @@
 
    ```
 
-   npm run dev
+   pnpm run dev
 
   ```
 
@@ -92,7 +92,7 @@
 
    ```
 
-   npm run build
+   pnpm run build
 
    ```
 
@@ -104,7 +104,7 @@
 
    ```
 
-   npm run preview
+   pnpm run preview
 
    ```
 
