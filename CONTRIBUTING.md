@@ -50,7 +50,7 @@
 
   ```
 
-    npm install
+    pnpm install
 
   ```
     
@@ -62,7 +62,7 @@
 
   ```
 
-    npm run dev
+    pnpm run dev
 
   ```
     
