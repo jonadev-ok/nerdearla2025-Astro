@@ -21,9 +21,11 @@ El proyecto se trata de una landing page con un blog integrado con articulos rel
 
 </div>
 
-## Link al proyecto desplegado: <a href="https://astro-devs.vercel.app/">astro-devs</a>.
-<h2>Instalación y ejecución.</h2>
-<p>Estos son los pasos para levantar el proyecto en tu equipo:</p>
+Link al proyecto desplegado: <a href="https://astro-devs.vercel.app/">astro-devs</a>.
+
+## Instalación y ejecución.
+
+Estos son los pasos para levantar el proyecto en tu equipo:
 <ol>
   <li>
     <p>
