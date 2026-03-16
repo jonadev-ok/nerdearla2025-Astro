@@ -69,7 +69,7 @@
 
    ```
 
-  npm install 
+  pnpm install 
 
   ```
   </li>
