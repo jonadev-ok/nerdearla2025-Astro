@@ -123,6 +123,14 @@ Si querés aportar, revisá primero nuestra guía:
 También tenemos un código de conducta para asegurar que la comunidad sea inclusiva y respetuosa:  
  [Código de Conducta](CODE_OF_CONDUCT.md)
 
+## 🫂 Contributors
+
+<a href="https://github.com/jonadev-ok/astro-blog-template/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jonadev-ok/astro-blog-template"/>
+</a>
+
+<p></p>
+
 
 <h2>Gracias a todos y a todas!!!</h2>
 
