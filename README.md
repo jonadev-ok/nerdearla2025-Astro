@@ -132,5 +132,4 @@ También tenemos un código de conducta para asegurar que la comunidad sea inclu
 <p></p>
 
 
-<h2>Gracias a todos y a todas!!!</h2>
-
+### Gracias a todos y a todas!!!
