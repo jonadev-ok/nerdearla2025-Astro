@@ -1,9 +1,12 @@
 
 <img width="1280" height="250" alt="Copia de githubport (1)" src="https://github.com/user-attachments/assets/9bd77c65-3693-4f1b-b186-f48fe8fcf57d" />
 
-<h1 align="center">Nerdearla 2025 - Workshop online: El futuro de las webs estaticas, Astro.</h1>
+# Nerdearla 2025 - Workshop online: El futuro de las webs estaticas, Astro.
 
-<p>Bienvenidos y bienvenidas. En este workshop en colaboración con nerdearla desarrollamos una web con el <a href="https://astro.build/">framework Astro</a>. Este proyecto esta enfocado en demostrar porque Astro es una gran opción para crear webs estáticas en lugar de otros frameworks que tienen mucha carga innecesaria de js por defecto para este tipo de proyectos. El proyecto se trata de una landing page con un blog integrado con articulos relacionados al producto principal.</p> 
+Bienvenidos y bienvenidas. En este workshop en colaboración con nerdearla desarrollamos una web con el 
+<a href="https://astro.build/">framework Astro</a>. Este proyecto esta enfocado en demostrar porque Astro es una gran opción para 
+crear webs estáticas en lugar de otros frameworks que tienen mucha carga innecesaria de js por defecto para este tipo de proyectos. 
+El proyecto se trata de una landing page con un blog integrado con articulos relacionados al producto principal.
 
 <img width="1920" height="1080" alt="248shots_so" src="https://github.com/user-attachments/assets/af309524-0472-46c2-8bdc-29c3718c12b5" />
 
