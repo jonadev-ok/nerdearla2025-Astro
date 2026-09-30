@@ -3,33 +3,22 @@ import LayoutBlog from "./LayoutBlog.astro";
 import ShareButtons from "../components/islands/ShareButtons";
 
 const { frontmatter } = Astro.props;
-
 const currentURL = Astro.site + Astro.url.pathname;
 const title = frontmatter.title;
 ---
 
 <LayoutBlog title={frontmatter.title}>
-  <article class="w-full flex justify-center my-20 flex-col">
-    <h1 class="text-3xl p-4 md:text-4xl text-white font-bold mb-6 text-center">
-      {frontmatter.title}
-    </h1>
-    <h2>
-      <ul class="flex justify-center text-white">
-        <li class="px-2">📅{frontmatter.pubDate}</li>
-        <li class="px-2 flex flex-row">
-          {
-            frontmatter.tags.map((tag: any) => (
-              <p class="px-2 mx-2 flex flex-row bg-orange-500 rounded-sm">
-                <a class="text-white mx-2" href={`/tags/${tag}`}>
-                  {tag}
-                </a>
-              </p>
-            ))
-          }
-        </li>
-      </ul>
-    </h2>
-    <slot />
-    <ShareButtons url={currentURL} title={title} client:load />
+  <article class="post-shell" id="inicio">
+    <h1 class="post-heading">{frontmatter.title}</h1>
+    <ul class="post-meta">
+      <li>📅{frontmatter.pubDate}</li>
+      <li class="post-tags">
+        {frontmatter.tags.map((tag: string) => (
+          <a href={`/tags/${tag}`} class="blog-tag">{tag}</a>
+        ))}
+      </li>
+    </ul>
+    <div class="post-content"><slot /></div>
+    <div class="post-share"><ShareButtons url={currentURL} title={title} client:load /></div>
   </article>
 </LayoutBlog>

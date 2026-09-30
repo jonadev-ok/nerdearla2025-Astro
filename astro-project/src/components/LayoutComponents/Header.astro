@@ -1,6 +1,4 @@
 ---
-import Tooltip from "../ui/Tooltip.astro";
-
 interface NavItem {
   title: string;
   label: string;
@@ -30,55 +28,32 @@ const {
 const { pathname } = Astro.url;
 ---
 
-<header
-  class={`${isFixed ? "fixed top-0" : "absolute top-0"} bg-transparent flex w-full items-center justify-between sm:px-1 px-2`}
->
-  <a href="/">
-    <div class="flex justify-center items-center md:w-50 sm:w-90 h-auto">
-      <img src={logo} class="m-4 w-7 h-auto" alt={logoAlt} />
-      <h2 class="my-3 text-orange-500 font-bold text-2xl">
-        {brand}<span class="text-white font-bold text-2xl">{highlight}</span>
-      </h2>
-    </div>
-  </a>
-
-  <nav class="w-100 hidden md:flex gap-3 justify-center">
-    {
-      navItems.map((link) => {
-        const isActive =
-          link.url === "/" ? pathname === "/" : pathname.startsWith(link.url);
+<header class:list={["site-header", { "is-fixed": isFixed }]}>
+  <div class="header-inner">
+    <a class="brand-lockup" href="/" aria-label={`${brand} ${highlight}`}>
+      <img src={logo} alt={logoAlt} />
+      <span class="brand-name">{brand}<b>{highlight}</b></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      {navItems.map((link) => {
+        const isActive = link.url === "/" ? pathname === "/" : !link.url.startsWith("#") && pathname.startsWith(link.url);
         return (
-          <a
-            class={`text-2xl ml-15 font-light block px-2 py-2 transition transform duration-300 hover:scale-110 ${
-              isActive ? "text-orange-500" : "text-white hover:text-orange-500"
-            }`}
-            aria-label={link.label}
-            href={link.url}
-          >
-            {link.title}
+          <a class:list={["nav-link", { active: isActive }]} aria-label={link.label} aria-current={isActive ? "page" : undefined} href={link.url}>
+            <span>{link.title}</span>
           </a>
         );
-      })
-    }
-  </nav>
-
-  {
-    githubUrl && (
-      <div class="flex justify-center items-center w-20 h-auto">
-        <Tooltip text="Visita el repositorio del proyecto">
-          <a
-            class="sm:hidden md:block flex text-white"
-            href={githubUrl}
-            target="_blank"
-          >
-            <img
-              src="/logos/GitHubLogo.svg"
-              class="m-3 w-7"
-              alt="GitHub Repo"
-            />
-          </a>
-        </Tooltip>
-      </div>
-    )
-  }
+      })}
+    </nav>
+    {githubUrl && (
+      <a class="github-link" href={githubUrl} target="_blank" rel="noopener noreferrer" title="Visita el repositorio del proyecto">
+        <img src="/logos/GitHubLogo.svg" alt="GitHub Repo" />
+      </a>
+    )}
+    <details class="mobile-menu">
+      <summary aria-label="Abrir menú"><span></span><span></span></summary>
+      <nav aria-label="Navegación móvil">
+        {navItems.map((link) => <a href={link.url}>{link.title}<span aria-hidden="true">↗</span></a>)}
+      </nav>
+    </details>
+  </div>
 </header>

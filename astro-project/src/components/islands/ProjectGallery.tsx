@@ -15,14 +15,14 @@ export default function ProjectGallery({ images }: Props) {
 
   return (
     <div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-2 px-4 pb-5 bg-black">
+      <div class="project-gallery-grid">
         {images.map((img, idx) => (
           <img
             key={idx}
             src={img.src}
             alt={img.alt}
             onClick={() => setSelected(img.src)}
-            class="cursor-pointer hover:opacity-80 p-2 rounded-4xl"
+            class="project-gallery-image"
           />
         ))}
       </div>
@@ -30,9 +30,9 @@ export default function ProjectGallery({ images }: Props) {
       {selected && (
         <div
           onClick={() => setSelected(null)}
-          class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-100"
+          class="project-lightbox"
         >
-          <img src={selected} alt="Vista ampliada" class="max-h-[90%] max-w-[90%] rounded-4xl" />
+          <img src={selected} alt="Vista ampliada" class="project-lightbox-image" />
         </div>
       )}
     </div>

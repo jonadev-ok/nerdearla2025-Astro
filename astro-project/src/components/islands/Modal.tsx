@@ -26,22 +26,24 @@ export default function Modal({
   if (!open) return null;
 
   return (
-    <div class="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
-      <div class="bg-black p-6 rounded-2xl shadow-lg sm:w-sm xl:w-5xl xl:h-[250px] 2xl:w-3xl  text-center relative">
+    <div class="guide-modal-backdrop">
+      <div class="guide-modal" role="dialog" aria-modal="true" aria-labelledby="guide-modal-title">
         <button
-          class="absolute top-2 right-2 text-white hover:text-red-500 cursor-pointer"
+          class="guide-modal-close"
           onClick={() => setOpen(false)}
+          aria-label="Cerrar"
         >
           ✕
         </button>
 
-        <h2 class="text-2xl font-semibold mb-4 text-orange-500">{title}</h2>
-        <p class="text-lg mb-4 text-white">{message}</p>
+        <span class="guide-modal-mark" aria-hidden="true">✳</span>
+        <h2 id="guide-modal-title">{title}</h2>
+        <p>{message}</p>
         <a
           href={downloadUrl}
           target="_blank"
           download
-          class="inline-block bg-orange-500 text-white px-4 py-2 rounded-lg shadow hover:bg-orange-700 transition"
+          class="guide-modal-button"
         >
           {buttonText}
         </a>

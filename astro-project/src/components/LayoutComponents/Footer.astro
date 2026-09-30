@@ -1,26 +1,19 @@
 ---
-const { text, url, Authors } = Astro.props;
+const year = new Date().getFullYear();
 ---
 
-<footer class="flex w-full h-20 justify-center items-center">
-  <p class="text-center text-xl font-extralight text-gray-200">
-    &copy; {new Date().getFullYear()}{" "}
-    Astro devs. un sitio creado por <a
-      href="https://instagram.jona.dev_ok"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-blue-500 italic"
-    >
-      Jona Dev
-    </a> - Realizado con 🧡 para
-    <a
-      href="https://nerdear.la"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-orange-500 font-bold"
-    >
-      Nerdearla
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a class="footer-brand" href="/" aria-label="Astro devs, inicio">
+      <img src="/logos/Astro_light.svg" alt="Astro" />
+      <span>Astro <b>devs</b></span>
     </a>
-    Todos los derechos reservados.
-  </p>
+    <p>
+      © {year} Astro devs. un sitio creado por
+      <a href="https://instagram.jona.dev_ok" target="_blank" rel="noopener noreferrer">Jona Dev</a>
+      - Realizado con 🧡 para
+      <a href="https://nerdear.la" target="_blank" rel="noopener noreferrer">Nerdearla</a>
+      Todos los derechos reservados.
+    </p>
+  </div>
 </footer>

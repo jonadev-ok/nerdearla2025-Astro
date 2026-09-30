@@ -1,7 +1,7 @@
 ---
-import ButtonScroll from "../components/islands/ButtonScroll";
 import Footer from "../components/LayoutComponents/Footer.astro";
 import HeaderLanding from "../components/LayoutComponents/HeaderLanding.astro";
+import CriticalLayout from "../components/LayoutComponents/CriticalLayout.astro";
 import "../styles/global.css";
 const {
   title = "Astro devs",
@@ -11,7 +11,7 @@ const {
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es-AR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -19,23 +19,11 @@ const {
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <CriticalLayout />
   </head>
   <body>
     <HeaderLanding />
     <slot />
-    <ButtonScroll client:load />
     <Footer />
   </body>
 </html>
-
-<style>
-  html {
-    scroll-behavior: smooth;
-    background: black;
-  }
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>

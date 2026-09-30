@@ -7,19 +7,14 @@ const message = {
   secondMessage: "Volvés a nuestro blog, revisa nuestras novedades!",
 };
 
-const rawPosts = await Promise.all(
-  Object.values(import.meta.glob("../content/*.md", { eager: true }))
+const rawPosts = Object.values(
+  import.meta.glob("../content/*.md", { eager: true }),
 );
-
-const posts = rawPosts.map((post: any) => ({
-  title: post.frontmatter.title,
-  url: post.url,
-}));
 
 const allPosts = [...rawPosts].sort(
   (a: any, b: any) =>
     new Date(b.frontmatter.pubDate).getTime() -
-    new Date(a.frontmatter.pubDate).getTime()
+    new Date(a.frontmatter.pubDate).getTime(),
 );
 ---
 
@@ -34,43 +29,27 @@ const allPosts = [...rawPosts].sort(
       bgImage="/backgrounds/bg-galaxy.webp"
       message={message}
     />
-    <div
-      id="articles"
-      class="grid grid-cols-1 sm:grid-cols-2 mt-20 h-auto lg:grid-cols-3 gap-6 w-full max-w-full px-5 py-20"
-    >
-      {
-        allPosts.map((post: any) => (
-          <article class="bg-neutral-800 hover:bg-neutral-700 rounded-2xl w-100 overflow-hidden shadow-lg transition flex flex-col mx-2">
-            <div class="p-3 flex flex-col gap-2">
-              <h2 class="text-2xl font-bold text-white">
-                <a href={post.url} class="hover:underline">
-                  {post.frontmatter.title}
-                </a>
-              </h2>
-              <div class="flex flex-wrap gap-3 items-center text-sm text-gray-400">
-                📅 {post.frontmatter.pubDate}
-                {post.frontmatter.tags.map((tag: any) => (
-                  <a
-                    href={`/tags/${tag}`}
-                    class="bg-orange-500 text-white px-2 py-1 rounded-md hover:bg-orange-600 transition"
-                  >
-                    {tag}
-                  </a>
-                ))}
-              </div>
-              <p class="text-gray-300 line-clamp-3 overflow-hidden">
-                {post.frontmatter.description + "..."}
-              </p>
-              <a
-                href={post.url}
-                class="text-orange-500 hover:underline hover:text-orange-600 font-medium"
-              >
-                Leer más →
-              </a>
+    <section id="articles" class="blog-feed">
+      <div class="blog-feed-heading">
+        <span class="blog-orbit-mark" aria-hidden="true">✳</span>
+        <span class="blog-feed-rule"></span>
+      </div>
+      <div class="blog-grid">
+        {allPosts.map((post: any, index: number) => (
+          <article class:list={["blog-card", `blog-card-${index + 1}`]}>
+            <span class="blog-card-index" aria-hidden="true">0{index + 1}</span>
+            <h2><a href={post.url}>{post.frontmatter.title}</a></h2>
+            <div class="blog-card-meta">
+              <span>📅 {post.frontmatter.pubDate}</span>
+              {post.frontmatter.tags.map((tag: any) => (
+                <a href={`/tags/${tag}`} class="blog-tag">{tag}</a>
+              ))}
             </div>
+            <p>{post.frontmatter.description + "..."}</p>
+            <a href={post.url} class="blog-read">Leer más <span aria-hidden="true">→</span></a>
           </article>
-        ))
-      }
-    </div>
+        ))}
+      </div>
+    </section>
   </main>
 </LayoutBlog>

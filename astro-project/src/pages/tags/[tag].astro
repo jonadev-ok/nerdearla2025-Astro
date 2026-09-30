@@ -1,9 +1,7 @@
 ---
 export const prerender = true;
 import LayoutBlog from "../../layouts/LayoutBlog.astro";
-import HeaderBlog from "../../components/LayoutComponents/HeaderBlog.astro";
 import BlogArticle from "../../components/blog/BlogArticle.astro";
-import TitleContainer from "../../components/ui/TitleContainer.astro";
 
 interface Post {
   url: string;
@@ -17,63 +15,53 @@ interface Post {
 
 interface Props {
   posts: Post[];
+  tag: string;
 }
-export async function getStaticPaths(): Promise<any> {
+
+export function getStaticPaths(): { params: { tag: string }; props: Props }[] {
   const allPosts = Object.entries(
-    import.meta.glob("../content/*.md", { eager: true })
-  ).map(([path, post]: any) => {
-    return {
-      ...post,
-      url: "/content/" + path.split("/").pop()?.replace(".md", ""),
-    };
-  }) as Post[];
+    import.meta.glob("../content/*.md", { eager: true }),
+  ).map(([path, post]: any) => ({
+    ...post,
+    url: "/content/" + path.split("/").pop()?.replace(".md", ""),
+  })) as Post[];
 
-  const filterDate = allPosts.sort(
-    (a, b) =>
-      new Date(b.frontmatter.pubDate).getTime() -
-      new Date(a.frontmatter.pubDate).getTime()
-  );
+  const uniqueTags = [...new Set(allPosts.flatMap((post) => post.frontmatter.tags))];
 
-  const uniqueTags = [
-    ...new Set(allPosts.map((post) => post.frontmatter.tags).flat()),
-  ];
-
-  return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts.filter((post) =>
-      post.frontmatter.tags.includes(tag)
-    );
-    return {
-      params: { tag },
-      props: { posts: filteredPosts },
-    };
-  });
+  return uniqueTags.map((tag) => ({
+    params: { tag },
+    props: {
+      tag,
+      posts: allPosts
+        .filter((post) => post.frontmatter.tags.includes(tag))
+        .sort(
+          (a, b) =>
+            new Date(b.frontmatter.pubDate).getTime() -
+            new Date(a.frontmatter.pubDate).getTime(),
+        ),
+    },
+  }));
 }
 
-
-const { tag } = Astro.params;
-const { posts } = Astro.props;
+const { tag, posts } = Astro.props;
 ---
 
 <LayoutBlog pageTitle={tag}>
-  <HeaderBlog />
-  <section class="flex flex-col items-center w-full mb-20 py-25">
-    <TitleContainer>
-      Entradas etiquetadas con {tag}
-    </TitleContainer>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-full px-5 py-15"
-    >
-      {
-        posts.map((post: any) => (
-          <BlogArticle
-            url={post.url}
-            title={post.frontmatter.title}
-            pubDate={post.frontmatter.pubDate}
-            tags={post.frontmatter.tags}
-            description={post.frontmatter.description}
-          />
-        ))
-      }
+  <main class="tag-results" id="inicio">
+    <div class="tag-results-heading">
+      <span class="blog-orbit-mark" aria-hidden="true">✳</span>
+      <h1>Entradas etiquetadas con {tag}</h1>
     </div>
-  </section>
+    <div class="blog-grid">
+      {posts.map((post) => (
+        <BlogArticle
+          url={post.url}
+          title={post.frontmatter.title}
+          pubDate={post.frontmatter.pubDate}
+          tags={post.frontmatter.tags}
+          description={post.frontmatter.description}
+        />
+      ))}
+    </div>
+  </main>
 </LayoutBlog>

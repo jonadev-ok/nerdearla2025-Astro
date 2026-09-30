@@ -4,7 +4,7 @@ const { id, bgImage } = Astro.props;
 
 <section
   id={id ? id : undefined}
-  class="bg-cover text-center w-full h-[100vh] pt-20 flex items-center justify-center flex-col"
+  class="hero-shell"
   style={{ backgroundImage: bgImage ? `url(${bgImage})` : "none" }}
 >
   <slot />
